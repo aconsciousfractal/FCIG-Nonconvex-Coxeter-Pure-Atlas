@@ -1,1 +1,1 @@
-38445a4a680fc9c6413798a11cd78095f6bf4350ebce19ca005c2ee6de9c9216  paper/The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf
+86f14af29c6d77c57415f2ef8eab2fbcc73d721f5194375fd1abe0194e046a34  paper/The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf

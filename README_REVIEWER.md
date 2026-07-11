@@ -36,8 +36,9 @@ eligible masks, and 2,874 canonical left-orbit candidates; checks every edge
 stratum; independently enumerates exact corner isometries in two lanes; rejects
 every non-`S4` map; and reruns exact cover on the resulting congruence classes.
 
-## Remaining gate
+## Review status
 
-This package records an internal exact gate but no claim of independent external
-approval.  Please treat the public repository as a release candidate until the
-external red-team record and owner release decision are added.
+The external mathematical and packaging red-team gate is complete, and its
+actionable findings are incorporated in this repository. This is still an
+exact public companion package rather than a claim of journal peer review,
+formal verification, or archival publication.

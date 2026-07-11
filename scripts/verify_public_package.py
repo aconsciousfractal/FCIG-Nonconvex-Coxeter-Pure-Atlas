@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fast, standard-library verification of the public release candidate."""
+"""Fast, standard-library verification of the public companion repository."""
 
 from __future__ import annotations
 
@@ -252,8 +252,12 @@ def main():
         "replay_summary.json": summary["payload_sha256_without_self_field"],
     }
     require(theorem["artifact_payload_sha256"] == artifact_hashes, "theorem artifact hash map mismatch")
-    require(theorem["publication_authorized"] is False, "theorem certificate authorizes publication")
-    require(preflight["publication_authorized"] is False, "preflight certificate authorizes publication")
+    require(theorem["public_repository_active"] is True, "theorem certificate does not mark the public repository active")
+    require(theorem["external_red_team_complete"] is True, "theorem certificate leaves the external red team open")
+    require(theorem["archival_article_release_authorized"] is False, "theorem certificate authorizes an archival article release")
+    require(preflight["public_repository_active"] is True, "preflight does not mark the public repository active")
+    require(preflight["checks"]["external_red_team_complete"] is True, "preflight leaves the external red team open")
+    require(preflight["archival_article_release_authorized"] is False, "preflight authorizes an archival article release")
     check_latex_artifact_references()
     check_private_firewall()
     print("PUBLIC_QUICK_VERIFY_PASS")

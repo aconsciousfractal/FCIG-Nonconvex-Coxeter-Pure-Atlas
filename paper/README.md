@@ -1,7 +1,7 @@
 # Paper source
 
 The title-named PDF `The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf` is built from a fresh staged copy by the
-release-candidate exporter.  Rebuild from this directory with:
+public-package exporter. Rebuild from this directory with:
 
 ```bash
 job=The_Nonconvex_A3_Coxeter-Chamber_Atlas

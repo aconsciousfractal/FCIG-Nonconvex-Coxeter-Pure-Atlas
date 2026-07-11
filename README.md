@@ -1,8 +1,11 @@
 # The Nonconvex A3 Coxeter-Chamber Atlas
 
-Release-candidate companion repository for:
+[![Exact package CI](https://github.com/aconsciousfractal/FCIG-Nonconvex-Coxeter-Pure-Atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/aconsciousfractal/FCIG-Nonconvex-Coxeter-Pure-Atlas/actions/workflows/ci.yml)
 
-> The Nonconvex A3 Coxeter-Chamber Atlas: Exact Covers, Patterson Separation, and Tetrahedral Symmetry  
+Public companion repository for:
+
+> [The Nonconvex A3 Coxeter-Chamber Atlas: Congruence Rigidity, Exact Covers, and Patterson Separation](paper/The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf)
+>
 > Oleksiy Babanskyy, 2026
 
 The fixed carrier is the regular tetrahedron subdivided into its 24 closed
@@ -26,9 +29,10 @@ symmetry/chirality classification of
 
 This is an exact finite theorem on the fixed 24-chamber carrier.  It is not a
 classification of arbitrary tetrahedron dissections, disconnected chamber
-unions, or non-Coxeter-aligned pieces.  The package is a release candidate:
-independent external mathematical red-team review and the owner release
-decision remain open.
+unions, or non-Coxeter-aligned pieces. The public repository has passed its
+external mathematical and packaging red-team gate with no mathematical
+blocker. This status is not a claim of journal peer review or archival
+publication, and no DOI has yet been assigned.
 
 ## Quick verification
 

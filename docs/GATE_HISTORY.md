@@ -9,4 +9,6 @@
 | Cover inventory | 786 raw covers, 86 cover orbits, 1,148 multiplier sets, 102 multiplier orbits. |
 | Ambient symmetry | 82 tile and 86 partition congruence classes; chirality resolved. |
 | Global congruence | Congruence equals left `S4` on all eligible candidates; exact cover recovers 15+82. |
-| Public-package preflight | Standalone release candidate assembled; external review remains open. |
+| Public-package preflight | Standalone public companion package assembled and fully checked. |
+| External S14H red team | No mathematical blocker; crosswalk, replay contract, governance, and RT-1 findings closed. |
+| Public repository | Version 1.0.0 active; journal peer review and archival DOI remain separate. |

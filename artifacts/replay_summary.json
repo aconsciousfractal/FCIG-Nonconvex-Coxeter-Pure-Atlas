@@ -4,7 +4,7 @@
   "status": "PASS_PUBLIC_DERIVED_ARTIFACT",
   "pass": true,
   "provenance": {
-    "derivation": "aggregate release-candidate summary over every exported exact parent",
+    "derivation": "aggregate public-companion summary over every exported exact parent",
     "parents": {
       "s4": {
         "source_id": "s4",
@@ -817,7 +817,7 @@
     "arbitrary_non_Coxeter_tetrahedron_dissections": false,
     "disconnected_chamber_unions": false,
     "formal_proof_artifact": false,
-    "external_red_team_complete": false
+    "external_red_team_complete": true
   },
-  "payload_sha256_without_self_field": "8A5273EA001BAD8A8769D0739593CBBDEABC6D46E7B3FDF0325B59C32CC119D9"
+  "payload_sha256_without_self_field": "0969935492EFCD0B5F37ADB28E5A7EDB214EB354B0911C9FE806245030E32F59"
 }

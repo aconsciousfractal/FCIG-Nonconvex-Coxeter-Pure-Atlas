@@ -6,7 +6,7 @@
   "jobname": "The_Nonconvex_A3_Coxeter-Chamber_Atlas",
   "page_count": 27,
   "pdf_path": "paper/The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf",
-  "pdf_sha256": "38445A4A680FC9C6413798A11CD78095F6BF4350EBCE19CA005C2EE6DE9C9216",
+  "pdf_sha256": "86F14AF29C6D77C57415F2EF8EAB2FBCC73D721F5194375FD1ABE0194E046A34",
   "catalogue_sha256": "BC3988B85C968539F9484B117E53207D09AF601FC450A34AA8E64F27DB6E63D1",
   "tool_versions": {
     "pdflatex": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
@@ -45,5 +45,5 @@
     "undefined_citations": 0,
     "overfull_hboxes": 0
   },
-  "payload_sha256_without_self_field": "84764A602B1EFF0EF455B12FD631DE3AD9AD535F5FE1848DFF3E5C7D253947A4"
+  "payload_sha256_without_self_field": "804915CDC2A736B06C2F4501EF2F58331FFC438D502DC9A2E524A4D6DD2F2CE0"
 }

@@ -50,6 +50,34 @@ class PublicPackageTests(unittest.TestCase):
         missing = [rel for rel in sorted(references) if not (ROOT / rel).is_file()]
         self.assertEqual(missing, [])
 
+    def test_public_status_metadata_is_current(self):
+        theorem = json.loads((ROOT / "certificates/THEOREM_REPLAY_CERTIFICATE.json").read_text(encoding="utf-8"))
+        preflight = json.loads((ROOT / "certificates/PACKAGE_PREFLIGHT_CERTIFICATE.json").read_text(encoding="utf-8"))
+        self.assertTrue(theorem["public_repository_active"])
+        self.assertTrue(theorem["external_red_team_complete"])
+        self.assertFalse(theorem["archival_article_release_authorized"])
+        self.assertTrue(preflight["public_repository_active"])
+        self.assertTrue(preflight["checks"]["external_red_team_complete"])
+        self.assertFalse(preflight["archival_article_release_authorized"])
+        cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        self.assertIn('version: "1.0.0"', cff)
+        self.assertIn("Congruence Rigidity, Exact Covers, and Patterson Separation", cff)
+        public_text = " ".join(
+            (ROOT / rel).read_text(encoding="utf-8")
+            for rel in (
+                "README.md",
+                "README_REVIEWER.md",
+                "paper/main.tex",
+                "paper/sections/10_reproducibility.tex",
+            )
+        )
+        for stale in (
+            "external red-team record and owner release decision are added",
+            "after the final external red team",
+            "the package becomes a publication",
+        ):
+            self.assertNotIn(stale, public_text)
+
 
 if __name__ == "__main__":
     unittest.main()

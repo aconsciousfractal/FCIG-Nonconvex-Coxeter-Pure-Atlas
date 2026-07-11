@@ -1,7 +1,7 @@
 {
-  "schema": "fcig.nonconvex_a3.public.theorem_replay_certificate.v1",
+  "schema": "fcig.nonconvex_a3.public.theorem_replay_certificate.v2",
   "snapshot_date": "2026-07-11",
-  "status": "PASS_EXACT_FINITE_EVIDENCE_EXTERNAL_RED_TEAM_PENDING",
+  "status": "PASS_EXACT_FINITE_EVIDENCE_EXTERNAL_RED_TEAM_COMPLETE",
   "checks": {
     "global_congruence_gate_pass": true,
     "eligible_candidates": 2874,
@@ -21,9 +21,11 @@
     "cover_atlas.json": "48DEB0A50706312BBFABCF1BBEE9446F5FE186BA01DF850C083D76861F81BA97",
     "global_congruence_gate.json": "0BA90A983BB6FFA8F8996E8DE6E04B05401FBCD10B332A0AF8F230C65A105D78",
     "nonconvex_tile_atlas.json": "E7A720DC6F57C5B6B94BBAB2D44BB47FDF732AA9260C9B00DA45BF4D0C8551CE",
-    "replay_summary.json": "8A5273EA001BAD8A8769D0739593CBBDEABC6D46E7B3FDF0325B59C32CC119D9"
+    "replay_summary.json": "0969935492EFCD0B5F37ADB28E5A7EDB214EB354B0911C9FE806245030E32F59"
   },
-  "publication_authorized": false,
-  "remaining_gate": "independent external mathematical red team and owner release decision",
-  "payload_sha256_without_self_field": "C1DD26A37F49BF84B8D3ABF86B7C80D396A6D618A792B48B5BDD3F62854F61C2"
+  "public_repository_active": true,
+  "external_red_team_complete": true,
+  "archival_article_release_authorized": false,
+  "remaining_gate": "journal peer review and archival DOI",
+  "payload_sha256_without_self_field": "C25B36EF2A60E49546877A440C8238EA6A3494170AA36F4C3F7533494B598138"
 }

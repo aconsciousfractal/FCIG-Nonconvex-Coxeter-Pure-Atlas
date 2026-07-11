@@ -1,7 +1,7 @@
 {
-  "schema": "fcig.nonconvex_a3.public.package_preflight.v1",
+  "schema": "fcig.nonconvex_a3.public.package_preflight.v2",
   "snapshot_date": "2026-07-11",
-  "status": "PASS_RELEASE_CANDIDATE_NOT_PUBLICATION_AUTHORIZATION",
+  "status": "PASS_PUBLIC_COMPANION_REPOSITORY_ARTICLE_ARCHIVAL_GATE_PENDING",
   "checks": {
     "standalone_runtime": true,
     "python_standard_library_only": true,
@@ -16,8 +16,9 @@
     "private_marker_scan_pass": true,
     "manifest_and_quick_tests_pass": true,
     "full_global_replay_available": true,
-    "external_red_team_complete": false
+    "external_red_team_complete": true
   },
-  "publication_authorized": false,
-  "payload_sha256_without_self_field": "D6B108B01A0C8DBD55C2C59513F3EBC3B6B16050926AE10FA4A73871331C601B"
+  "public_repository_active": true,
+  "archival_article_release_authorized": false,
+  "payload_sha256_without_self_field": "FF67E85479BF1302F5E297D19A58471FA62C4DA08989EB0B469CF84C56D0AD6F"
 }

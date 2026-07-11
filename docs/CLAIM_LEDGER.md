@@ -9,5 +9,6 @@
 | C5 | certified finite atlas | The rows support 786 raw covers, 86 cover orbits, 1,148 multiplier sets, and 102 multiplier orbits. | `cover_atlas.json` | Algebraic selector data is not mechanical geometry. |
 | C6 | certified finite atlas | Patterson, contact, boundary, and ambient-symmetry panels have the counts recorded in the paper. | public artifacts and tables | Each invariant retains its stated quantifier and completeness scope. |
 
-The package records exact finite evidence and an internal proof reduction.  It
-does not claim formal proof or completed independent external review.
+The package records exact finite evidence and a machine-assisted proof
+reduction. External adversarial review found no mathematical blocker. It does
+not claim formal verification, journal peer review, or an archival DOI.
