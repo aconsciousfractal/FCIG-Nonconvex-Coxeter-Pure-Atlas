@@ -1,0 +1,1275 @@
+{
+  "schema": "fcig.p18.s4.independent_bounded_census.v1",
+  "project": "P18",
+  "gate": "P18-S4",
+  "date": "2026-07-10",
+  "status": "PASS_INDEPENDENT_NUMERIC_MASK_SCAN",
+  "algorithm": {
+    "carrier_scan": "all integer masks 1..2^24-1",
+    "connectedness": "independent bit-frontier search in the locked chamber graph",
+    "connected_stream": "strict numeric order, three-byte little-endian masks",
+    "halfspace": "six precomputed unanimous-precedence halfspace masks",
+    "geodesic": "independently precomputed all-pairs chamber intervals",
+    "orbit": "minimum over 24 precomputed left relabeling maps",
+    "exact_cover": "independent minimum-remaining-column recursion with failed-state memoization",
+    "t2_python_modules_imported": false
+  },
+  "connected_census": {
+    "total": 1210648,
+    "by_size": {
+      "1": 24,
+      "2": 36,
+      "3": 72,
+      "4": 150,
+      "5": 336,
+      "6": 752,
+      "7": 1632,
+      "8": 3522,
+      "9": 7600,
+      "10": 16008,
+      "11": 32688,
+      "12": 63124,
+      "13": 111480,
+      "14": 174276,
+      "15": 230128,
+      "16": 239127,
+      "17": 182520,
+      "18": 97844,
+      "19": 36936,
+      "20": 10092,
+      "21": 2000,
+      "22": 276,
+      "23": 24,
+      "24": 1
+    },
+    "numeric_order_mask_stream_sha256": "06DD2EFBBB194FB042847478CE1BA7C1047A408AE0CE5AB482F24F44461D80E5",
+    "sum_masks_mod_2_64": 12845474664750,
+    "xor_masks": 0
+  },
+  "convexity_census": {
+    "halfspace_convex": 219,
+    "geodesic_convex": 219,
+    "disagreement_count": 0,
+    "first_disagreement_masks_hex": [],
+    "euclidean_convexity_computed": false
+  },
+  "tiler_search": {
+    "eligible_connected_masks": 67681,
+    "canonical_eligible_tile_orbits": 2874,
+    "nontiler_canonical_orbits": 2777,
+    "convex_tiler_orbits": 15,
+    "nonconvex_tiler_orbits": 82,
+    "total_tiler_orbits": 97,
+    "by_k_convex": {
+      "1": 1,
+      "2": 3,
+      "3": 2,
+      "4": 2,
+      "6": 3,
+      "8": 2,
+      "12": 1,
+      "24": 1
+    },
+    "by_k_nonconvex": {
+      "6": 14,
+      "8": 18,
+      "12": 50
+    },
+    "sorted_representative_records_sha256": "A756CC7558984DD821EDC34064A4DA9A76F349174F7046B161440C0C52FBD06A",
+    "records": [
+      {
+        "row_id": "P18-CV-K01-M000001",
+        "mask_hex": "000001",
+        "k": 1,
+        "n_pieces": 24,
+        "convex": true,
+        "witness_masks_hex": [
+          "000001",
+          "000002",
+          "000004",
+          "000008",
+          "000010",
+          "000020",
+          "000040",
+          "000080",
+          "000100",
+          "000200",
+          "000400",
+          "000800",
+          "001000",
+          "002000",
+          "004000",
+          "008000",
+          "010000",
+          "020000",
+          "040000",
+          "080000",
+          "100000",
+          "200000",
+          "400000",
+          "800000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K02-M000003",
+        "mask_hex": "000003",
+        "k": 2,
+        "n_pieces": 12,
+        "convex": true,
+        "witness_masks_hex": [
+          "000003",
+          "00000C",
+          "000030",
+          "0000C0",
+          "000300",
+          "000C00",
+          "003000",
+          "00C000",
+          "030000",
+          "0C0000",
+          "300000",
+          "C00000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K02-M000005",
+        "mask_hex": "000005",
+        "k": 2,
+        "n_pieces": 12,
+        "convex": true,
+        "witness_masks_hex": [
+          "000005",
+          "000012",
+          "000028",
+          "000140",
+          "000480",
+          "000A00",
+          "005000",
+          "012000",
+          "028000",
+          "140000",
+          "480000",
+          "A00000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K02-M000041",
+        "mask_hex": "000041",
+        "k": 2,
+        "n_pieces": 12,
+        "convex": true,
+        "witness_masks_hex": [
+          "000041",
+          "000082",
+          "001004",
+          "002008",
+          "040010",
+          "080020",
+          "004100",
+          "008200",
+          "100400",
+          "200800",
+          "410000",
+          "820000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K03-M000007",
+        "mask_hex": "000007",
+        "k": 3,
+        "n_pieces": 8,
+        "convex": true,
+        "witness_masks_hex": [
+          "000007",
+          "000038",
+          "0001C0",
+          "000E00",
+          "007000",
+          "038000",
+          "1C0000",
+          "E00000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K03-M000045",
+        "mask_hex": "000045",
+        "k": 3,
+        "n_pieces": 8,
+        "convex": true,
+        "witness_masks_hex": [
+          "000045",
+          "005100",
+          "000092",
+          "140400",
+          "002028",
+          "490000",
+          "008A00",
+          "A20000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K04-M00004D",
+        "mask_hex": "00004D",
+        "k": 4,
+        "n_pieces": 6,
+        "convex": true,
+        "witness_masks_hex": [
+          "00004D",
+          "0000B2",
+          "007100",
+          "008E00",
+          "4D0000",
+          "B20000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K04-M0000C3",
+        "mask_hex": "0000C3",
+        "k": 4,
+        "n_pieces": 6,
+        "convex": true,
+        "witness_masks_hex": [
+          "0000C3",
+          "00300C",
+          "0C0030",
+          "00C300",
+          "300C00",
+          "C30000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K06-M00003F",
+        "mask_hex": "00003F",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": true,
+        "witness_masks_hex": [
+          "00003F",
+          "000FC0",
+          "03F000",
+          "FC0000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K06-M0001D3",
+        "mask_hex": "0001D3",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": true,
+        "witness_masks_hex": [
+          "0001D3",
+          "00702C",
+          "340E00",
+          "CB8000"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K06-M005145",
+        "mask_hex": "005145",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": true,
+        "witness_masks_hex": [
+          "005145",
+          "140492",
+          "492028",
+          "A28A00"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K08-M0000FF",
+        "mask_hex": "0000FF",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": true,
+        "witness_masks_hex": [
+          "0000FF",
+          "03F300",
+          "FC0C00"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K08-M0051C7",
+        "mask_hex": "0051C7",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": true,
+        "witness_masks_hex": [
+          "0051C7",
+          "4D2038",
+          "B28E00"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K12-M0071FF",
+        "mask_hex": "0071FF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": true,
+        "witness_masks_hex": [
+          "0071FF",
+          "FF8E00"
+        ]
+      },
+      {
+        "row_id": "P18-CV-K24-MFFFFFF",
+        "mask_hex": "FFFFFF",
+        "k": 24,
+        "n_pieces": 1,
+        "convex": true,
+        "witness_masks_hex": [
+          "FFFFFF"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M00006F",
+        "mask_hex": "00006F",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "00006F",
+          "BC0010",
+          "008F80",
+          "437000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M000077",
+        "mask_hex": "000077",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "000077",
+          "01F008",
+          "100F80",
+          "EE0000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M00007D",
+        "mask_hex": "00007D",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "00007D",
+          "000F82",
+          "41F000",
+          "BE0000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M0000CF",
+        "mask_hex": "0000CF",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "0000CF",
+          "3C0030",
+          "00CF00",
+          "C33000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M000157",
+        "mask_hex": "000157",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "000157",
+          "017028",
+          "EA8000",
+          "140E80"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M00016D",
+        "mask_hex": "00016D",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "00016D",
+          "000E92",
+          "497000",
+          "B68000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M0001CD",
+        "mask_hex": "0001CD",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "0001CD",
+          "340032",
+          "02CE00",
+          "C93000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M00034D",
+        "mask_hex": "00034D",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "00034D",
+          "000CB2",
+          "4D3000",
+          "B2C000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M001097",
+        "mask_hex": "001097",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "001097",
+          "83A008",
+          "5C0420",
+          "204B40"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M0010C7",
+        "mask_hex": "0010C7",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "0010C7",
+          "C32008",
+          "1C0430",
+          "20CB00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M00114D",
+        "mask_hex": "00114D",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "00114D",
+          "4D2020",
+          "100C92",
+          "A2C200"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M0011C5",
+        "mask_hex": "0011C5",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "0011C5",
+          "140432",
+          "C92008",
+          "22CA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M001345",
+        "mask_hex": "001345",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "001345",
+          "A2C800",
+          "1004B2",
+          "4D2008"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K06-M0020BA",
+        "mask_hex": "0020BA",
+        "k": 6,
+        "n_pieces": 4,
+        "convex": false,
+        "witness_masks_hex": [
+          "041017",
+          "03A208",
+          "E80820",
+          "1045C0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00017F",
+        "mask_hex": "00017F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00017F",
+          "FC0480",
+          "03FA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0010EF",
+        "mask_hex": "0010EF",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0010EF",
+          "7C0C10",
+          "83E300"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00116F",
+        "mask_hex": "00116F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00116F",
+          "7C0490",
+          "83EA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0014AF",
+        "mask_hex": "0014AF",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0014AF",
+          "7C0A10",
+          "83E140"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M001F45",
+        "mask_hex": "001F45",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "001F45",
+          "F40092",
+          "0BE028"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0020DF",
+        "mask_hex": "0020DF",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0020DF",
+          "BC0C20",
+          "43D300"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00215F",
+        "mask_hex": "00215F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00215F",
+          "BC04A0",
+          "43DA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00249F",
+        "mask_hex": "00249F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00249F",
+          "BC0A20",
+          "43D140"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0030CF",
+        "mask_hex": "0030CF",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0030CF",
+          "3C0C30",
+          "C3C300"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00314F",
+        "mask_hex": "00314F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00314F",
+          "3C04B0",
+          "C3CA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M003157",
+        "mask_hex": "003157",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "003157",
+          "5F0028",
+          "A0CE80"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0031C7",
+        "mask_hex": "0031C7",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0031C7",
+          "4F0038",
+          "B0CE00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M00348F",
+        "mask_hex": "00348F",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "00348F",
+          "C3C140",
+          "3C0A30"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0034CD",
+        "mask_hex": "0034CD",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0034CD",
+          "CB0032",
+          "34CB00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M0035C5",
+        "mask_hex": "0035C5",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0035C5",
+          "4B003A",
+          "B4CA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M005157",
+        "mask_hex": "005157",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "005157",
+          "A28E80",
+          "5D2028"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M005353",
+        "mask_hex": "005353",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "005353",
+          "1D202C",
+          "E28C80"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K08-M007B28",
+        "mask_hex": "007B28",
+        "k": 8,
+        "n_pieces": 3,
+        "convex": false,
+        "witness_masks_hex": [
+          "0124CD",
+          "CA8032",
+          "345B00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M000FFF",
+        "mask_hex": "000FFF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "000FFF",
+          "FFF000"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0017FF",
+        "mask_hex": "0017FF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0017FF",
+          "FFE800"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M001FF7",
+        "mask_hex": "001FF7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "001FF7",
+          "FFE008"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M002BFF",
+        "mask_hex": "002BFF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "002BFF",
+          "FFD400"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M002FFB",
+        "mask_hex": "002FFB",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "002FFB",
+          "FFD004"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0033FF",
+        "mask_hex": "0033FF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0033FF",
+          "FFCC00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0055FF",
+        "mask_hex": "0055FF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0055FF",
+          "FFAA00"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M007FD3",
+        "mask_hex": "007FD3",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "007FD3",
+          "FF802C"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M012B7F",
+        "mask_hex": "012B7F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "012B7F",
+          "FED480"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M012FFA",
+        "mask_hex": "012FFA",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "028EBF",
+          "FD7140"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0417DF",
+        "mask_hex": "0417DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0417DF",
+          "FBE820"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M042BDF",
+        "mask_hex": "042BDF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "042BDF",
+          "FBD420"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M042DFB",
+        "mask_hex": "042DFB",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "042DFB",
+          "FBD204"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0433DF",
+        "mask_hex": "0433DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0433DF",
+          "FBCC20"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0447F7",
+        "mask_hex": "0447F7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0447F7",
+          "FBB808"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M044DDF",
+        "mask_hex": "044DDF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "044DDF",
+          "FBB220"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0455DF",
+        "mask_hex": "0455DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0455DF",
+          "FBAA20"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M045DD7",
+        "mask_hex": "045DD7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "045DD7",
+          "FBA228"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0471DF",
+        "mask_hex": "0471DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0471DF",
+          "FB8E20"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M047DD3",
+        "mask_hex": "047DD3",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "047DD3",
+          "FB822C"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M048EDF",
+        "mask_hex": "048EDF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "048EDF",
+          "FB7120"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M04D4DF",
+        "mask_hex": "04D4DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "04D4DF",
+          "FB2B20"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M04F0DF",
+        "mask_hex": "04F0DF",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "04F0DF",
+          "FB0F20"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M052B5F",
+        "mask_hex": "052B5F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "052B5F",
+          "FAD4A0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M052DFA",
+        "mask_hex": "052DFA",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "128EB7",
+          "ED7148"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M05335F",
+        "mask_hex": "05335F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "05335F",
+          "FACCA0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M05715F",
+        "mask_hex": "05715F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "05715F",
+          "FA8EA0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M057DD2",
+        "mask_hex": "057DD2",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "12D4B7",
+          "ED2B48"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M068E9F",
+        "mask_hex": "068E9F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "068E9F",
+          "F97160"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M06D49F",
+        "mask_hex": "06D49F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "06D49F",
+          "F92B60"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M06F09F",
+        "mask_hex": "06F09F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "06F09F",
+          "F90F60"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M06F23E",
+        "mask_hex": "06F23E",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "088BFB",
+          "F77404"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M07AA1F",
+        "mask_hex": "07AA1F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "07AA1F",
+          "F855E0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M07B21F",
+        "mask_hex": "07B21F",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "07B21F",
+          "F84DE0"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M07B4BA",
+        "mask_hex": "07B4BA",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "16F097",
+          "E90F68"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M07BA17",
+        "mask_hex": "07BA17",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "07BA17",
+          "F845E8"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M07BE92",
+        "mask_hex": "07BE92",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "17D417",
+          "E82BE8"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0C5CD7",
+        "mask_hex": "0C5CD7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0C5CD7",
+          "F3A328"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0CC3F3",
+        "mask_hex": "0CC3F3",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "0CC3F3",
+          "F33C0C"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M0D2CFA",
+        "mask_hex": "0D2CFA",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "14F0D7",
+          "EB0F28"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1455D7",
+        "mask_hex": "1455D7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "1455D7",
+          "EBAA28"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1471D7",
+        "mask_hex": "1471D7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "1471D7",
+          "EB8E28"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1475D3",
+        "mask_hex": "1475D3",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "1475D3",
+          "EB8A2C"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1525FA",
+        "mask_hex": "1525FA",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "157157",
+          "EA8EA8"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M153357",
+        "mask_hex": "153357",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "153357",
+          "EACCA8"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1575D2",
+        "mask_hex": "1575D2",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "16D497",
+          "E92B68"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1725F8",
+        "mask_hex": "1725F8",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "178E17",
+          "E871E8"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M17A4F8",
+        "mask_hex": "17A4F8",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "17AE13",
+          "E851EC"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1CD1D3",
+        "mask_hex": "1CD1D3",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "1CD1D3",
+          "E32E2C"
+        ]
+      },
+      {
+        "row_id": "P18-NC-K12-M1CD4C7",
+        "mask_hex": "1CD4C7",
+        "k": 12,
+        "n_pieces": 2,
+        "convex": false,
+        "witness_masks_hex": [
+          "1CD4C7",
+          "E32B38"
+        ]
+      }
+    ]
+  },
+  "payload_sha256_without_self_field": "1E48DDE8C826AF542441869456A8BE79105B1B7272B5AB8C8A89218AD300E89E"
+}

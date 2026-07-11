@@ -1,0 +1,99 @@
+\section{Computational certification and reproducibility}
+\label{sec:reproducibility}
+
+\subsection{Proof architecture}
+
+The computational part of the proof has five layers.
+\begin{enumerate}[label=(\arabic*),leftmargin=2.2em]
+\item A from-scratch mask scan constructs the connected and eligible
+candidate universe, canonicalises left orbits, and runs the exact-cover
+decision of \cref{alg:exact-cover}.
+\item Before selecting positives, the global congruence gate constructs the
+rank-three corner locus on all $2{,}874$ eligible candidates, proves its
+carrier covariance, and exhausts every invariant-surviving isometry in two
+exact lanes.
+\item Deterministic builders attach the Patterson, cover, selector, contact,
+boundary, and ambient-symmetry records to the immutable $82$ row identifiers.
+\item Independent algorithms cross-check the load-bearing quotient counts:
+source replay versus mask scan, recursive versus combination exact cover,
+orbit canonicalisation versus Burnside, and distance-graph versus affine-Gram
+isometry enumeration.
+\item Validators check schemas, self-hashes, row joins, theorem totals,
+negative controls, and byte identity of regenerated certificates.
+\end{enumerate}
+
+No random seed, numerical tolerance, network service, or proprietary solver
+is involved.  Group, mask, incidence, and flag-complex calculations use
+integers; ambient coordinates, distances, and plane data use exact rational
+arithmetic.
+
+\subsection{Replay modes}
+
+The companion repository provides a short verifier for the pinned theorem
+certificate and a full reconstruction mode.  The short path verifies all
+displayed totals, row identities, self-hashes, parent pins, complete joins,
+and the existence of every public artifact cited in the
+theorem-to-certificate crosswalk.  The full path regenerates the connected
+and eligible census, the all-candidate congruence gate, and the
+congruent-copy exact-cover decision, then compares all $2{,}874$ candidate
+records with the canonical certificate.  The Patterson, cover, selector,
+contact, boundary, and ambient-symmetry layers are frozen exact artifacts:
+the public package validates their provenance, row pins, schemas, joins, and
+structural identities, but does not regenerate them from their internal
+production builders.  A fresh-clone gate runs the package in a temporary
+directory to ensure that no neighbouring repository or private absolute
+path is required.
+
+The preflight additionally checks:
+\begin{itemize}[leftmargin=2em]
+\item deterministic JSON serialisation and SHA-256 manifests;
+\item absence of private paths and internal routing material;
+\item a completely green public test suite;
+\item successful title-named LaTeX compilation with resolved citations and
+cross-references;
+\item agreement between every number displayed in the paper and the public
+theorem certificate.
+\end{itemize}
+
+\subsection{Finite proof versus theorem import}
+
+The exact enumeration proves statements about the finite carrier once the
+objects and equivalences are fixed.  Euclidean use of the word ``convex''
+additionally imports the connected three-way convexity theorem from
+\cite{BabanskyyT2}.  Bibliographic background on Patterson functions,
+balanced complexes, group factorisation, and tiling terminology is not used
+as an oracle for any finite count.  This distinction is recorded explicitly
+in the source map and claim ledger shipped with the release-candidate
+repository.
+
+\subsection{Auditability}
+
+The complete $82$-row catalogue is printed in \cref{app:catalogue}; larger
+objects, such as the $212$ contact-edge records, are supplied in canonical
+machine-readable form.  \Cref{app:certificate-crosswalk} maps every theorem
+to its defining data, replay command, and certificate fields.  The public
+reviewer guide gives a ten-minute reading path and a longer independent replay
+path.  Release status is intentionally separate from mathematical status:
+the package becomes a publication only after the final external red team and
+owner-controlled release gate.
+
+\section{Conclusion}\label{sec:conclusion}
+
+The earlier convex classification exposed a sharp nonconvex remainder of
+$82$ left-translate tiling orbits.  The all-candidate rigidity theorem proves
+that free congruence creates neither additional identifications nor mixed-
+orbit Coxeter-pure covers, so the left census is the complete answer to the
+earlier congruent-copy problem.  On that foundation, the present work turns
+the nonconvex remainder into a complete finite atlas: canonical rows, an
+intrinsic labelled separator, all exact covers and multiplier fibres, exact
+contact complexes, and full tetrahedral symmetry data.  The labelled
+Patterson vector gives the nonconvex counterpart of the convex contact
+fingerprint, while the $82/20/33/32$ compression profile records why
+nonabelian coordinate labels are indispensable.
+
+The atlas also displays two independent forms of nonuniqueness.  Three tile
+rows possess more than one cover orbit, and two pairs of those covers agree
+edgewise without one global contact alignment.  At the same time, every
+whole partition remains tile-transitive inside the tetrahedron.  These facts
+show why tile, cover, selector, local contact, and global symmetry are best
+treated as separate typed layers rather than compressed into one invariant.

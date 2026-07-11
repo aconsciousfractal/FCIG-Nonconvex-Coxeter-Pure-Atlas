@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying article. See LICENSE_SCOPE.md for the mixed-license map."
+title: "The Nonconvex A3 Coxeter-Chamber Atlas: Exact Covers, Patterson Separation, and Tetrahedral Symmetry"
+version: "0.9.0-rc.1"
+type: software
+authors:
+  - family-names: Babanskyy
+    given-names: Oleksiy
+    orcid: "https://orcid.org/0009-0001-6176-6208"
+repository-code: "https://github.com/aconsciousfractal/FCIG-Nonconvex-Coxeter-Pure-Atlas"
+preferred-citation:
+  type: article
+  title: "The Nonconvex A3 Coxeter-Chamber Atlas: Exact Covers, Patterson Separation, and Tetrahedral Symmetry"
+  authors:
+    - family-names: Babanskyy
+      given-names: Oleksiy
+      orcid: "https://orcid.org/0009-0001-6176-6208"
+  year: 2026
+keywords:
+  - Coxeter-chambers
+  - regular-tetrahedron
+  - congruent-tilings
+  - exact-cover
+  - computational-geometry
+  - finite-atlas

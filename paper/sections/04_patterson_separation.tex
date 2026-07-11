@@ -1,0 +1,107 @@
+\section{The element-labelled Patterson separator}
+\label{sec:patterson}
+
+\subsection{Right differences in the group ring}
+
+For $U\subseteq G$ write $X_U=\sum_{u\in U}u$ in the integral group ring
+$\mathbb Z[G]$, and let $X_U^{(-1)}=\sum_{u\in U}u^{-1}$.  The coefficient of
+$h$ in $X_U^{(-1)}X_U$ is
+\[
+ a_U(h)=|U\cap Uh|=\#\{(u,v)\in U^2:u^{-1}v=h\}.
+\]
+This is the right interval content, or right Patterson function, in counting
+measure.  The left/right distinction is essential in a nonabelian group
+\cite{MandereauEtAl2011,GenuysPopoff2018}.
+
+\begin{lemma}[Patterson identities]\label[lemma]{lem:patterson-identities}
+For $U\subseteq G$ and $g,h\in G$,
+\begin{align*}
+a_U(e)&=|U|,&
+\sum_{h\in G}a_U(h)&=|U|^2,&
+a_U(h)&=a_U(h^{-1}),\\
+a_{gU}(h)&=a_U(h),&
+a_{Ug}(h)&=a_U(ghg^{-1}),&
+a_{G\setminus U}(h)&=|G|-2|U|+a_U(h).
+\end{align*}
+\end{lemma}
+\begin{proof}
+The first identity counts diagonal pairs, the second all ordered pairs in
+$U^2$, and inversion exchanges $(u,v)$ with $(v,u)$.  In a left translate,
+$(gu)^{-1}(gv)=u^{-1}v$.  In a right translate,
+$(ug)^{-1}(vg)=g^{-1}u^{-1}vg$, which gives the displayed conjugation after
+renaming the argument.  Finally, expand the two complement indicators in
+$\sum_x(1-1_U(x))(1-1_U(xh^{-1}))$.
+\end{proof}
+
+The formula for right translation explains why coordinate labels cannot be
+discarded casually.  Left translation fixes the vector pointwise; right
+translation permutes it through inner automorphisms.
+
+\subsection{Three controlled compressions}
+
+Let $C_1,\ldots,C_5$ be the conjugacy classes of $S_4$.  We compare four
+fingerprints:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item the full labelled vector $(a_U(h))_{h\in G}$ in the fixed word order;
+\item the five conjugacy-class sums
+$\bigl(\sum_{h\in C_i}a_U(h)\bigr)_i$;
+\item the ordered five-tuple of multisets
+$\bigl(\{a_U(h):h\in C_i\}_{\mathrm{multi}}\bigr)_i$;
+\item the single unlabelled multiset
+$\{a_U(h):h\in G\}_{\mathrm{multi}}$.
+\end{enumerate}
+These are distinct declared quotients of the data, not interchangeable
+notions of Patterson equivalence.
+
+\begin{theorem}[Labelled Patterson separation]\label{thm:patterson}
+On the $82$ rows of \cref{thm:left-atlas}, the full element-labelled right
+Patterson vector is injective.  The four fingerprints above yield
+\[
+\begin{array}{c|cccc}
+&\text{full labelled}&\text{class sums}&\text{class multisets}&
+\text{unlabelled}\\ \hline
+\#\text{ classes}&82&20&33&32.
+\end{array}
+\]
+The $24$ stored coordinates occupy $17$ orbits under inversion.
+\end{theorem}
+\begin{proof}
+For every row the $24$ coefficients are computed by exact integer
+intersection.  Equality grouping gives $82$ full vectors and, after applying
+each displayed quotient, $20,33,32$ classes.  The identities of
+\cref{lem:patterson-identities} are checked in all $82\cdot24=1{,}968$
+left-translation cases.  Inversion fixes the identity, the six
+transpositions, and the three double transpositions; the other $14$ elements
+form seven inverse pairs.  Thus there are $10+7=17$ inversion positions.
+\end{proof}
+
+\begin{remark}[Scope]
+The theorem is a collision-free certificate on one finite family.  It is not
+a phase-retrieval theorem and does not assert that second-order
+autocorrelation separates arbitrary subsets of $S_4$, still less arbitrary
+finite groups.  Higher-order invariants can be complete under hypotheses
+where second-order data are not \cite{Kakarala2012,RadcliffeScott2007}.
+\end{remark}
+
+\subsection{The half-size complement ambiguity}
+
+For $|U|=|G|/2$, \cref{lem:patterson-identities} gives
+$a_{G\setminus U}=a_U$.  This universal ambiguity does not produce a second
+atlas row in the $K12$ family.
+
+\begin{lemma}[Complement absorption]\label[lemma]{lem:complement}
+For every one of the $50$ atlas rows with $|U|=12$, the complement
+$G\setminus U$ belongs to the same left tile orbit as $U$.
+\end{lemma}
+\begin{proof}
+Every such row has a two-piece left-translate cover
+$G=g_1U\sqcup g_2U$.  Multiplication by $g_1^{-1}$ gives
+$G=U\sqcup gU$, where $g=g_1^{-1}g_2$.  Hence $G\setminus U=gU$.
+The certificate additionally checks the relation directly for all $50$
+canonical masks.
+\end{proof}
+
+The convex catalogue admits a compact separating contact vector
+\cite{BabanskyyT2}.  In the nonconvex atlas, the full right-difference labels
+play the parallel role.  The compression profile $82/20/33/32$ quantifies
+exactly how much separation is lost when those labels are forgotten.

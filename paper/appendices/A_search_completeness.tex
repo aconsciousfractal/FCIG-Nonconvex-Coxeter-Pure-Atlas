@@ -1,0 +1,71 @@
+\section{Search completeness and independent checks}
+\label{app:search}
+
+This appendix makes the finite proof contract explicit.  Let $M=2^{24}-1$
+be the full chamber mask and let $N(U)$ denote the distinct left translates
+of $U$.
+
+\subsection{Connected-mask scan}
+
+For each nonzero integer $m\le M$, breadth-first search in the induced
+right-Cayley graph decides connectivity.  Each connected mask is emitted
+once in numeric order.  The observed stream has $1{,}210{,}648$ entries and a
+pinned stream hash.  The eligibility predicate is
+\[
+ 24\equiv0\pmod{|U|}.
+\]
+Canonicalisation applies all $24$ precomputed left-action bit permutations
+and keeps the minimum.  The idempotence checks
+$\can_L(\can_L(U))=\can_L(U)$ and
+$\can_L(gU)=\can_L(U)$ are run throughout the candidate space.
+
+\subsection{Exact-cover decision}
+
+The decision search memoises remaining masks.  If $c$ is the least uncovered
+chamber, every completion contains one and only one member of $N(U)$ that
+contains $c$.  This proves the recursion of \cref{alg:exact-cover} complete.
+For the all-cover census, memoisation is removed from the output layer and
+the recursion emits every terminal unordered family.  A separate
+combination enumerator tests every $24/|U|$-subset of $N(U)$; its sorted cover
+stream agrees exactly with the recursive stream on all $82$ positive rows.
+
+\subsection{Orbit checks}
+
+Tile, cover, and selector canonical keys are computed by explicit minimisation
+over all $24$ group elements.  Stabiliser sizes satisfy orbit--stabiliser in
+every record.  Cover and selector orbit totals are independently checked by
+Burnside averaging.  All $30$ subgroups of $S_4$ are generated from closure,
+not read from a hand-written list; their type histogram is checked against
+the subgroup inventory in the certificate.
+
+\subsection{Geometric checks}
+
+Boundary vertices and planes are rational in the standard simplex model.
+For each of the $2{,}874$ eligible canonical candidates, the gate extracts
+every boundary triangle, forms primitive normal lines, verifies that no mesh
+edge supports a rank-three nonvertex stratum, and checks that $C_3(U)$ has
+affine rank three.  This remains valid for the $1{,}809$ candidates whose raw
+boundary triangulations have nonmanifold edge incidence, by
+\cref{lem:corner-strata}.
+
+Covariance under all coordinate permutations is proved at the carrier level
+rather than sampled mask by mask.  Exact audits of chamber bijections,
+chamber tetrahedra, facet occurrences, equality of facet keys, and primitive
+normal lines show that boundary extraction and normal rank commute with
+$\Phi_g$ for every one of the $2^{24}$ masks.  This single finite proof
+implies the $68{,}976$ candidate-action cases used in the canonical
+reduction.
+
+Complete point-set isometries of the canonical rank-three corner loci are
+then enumerated by both distance-graph backtracking and affine-Gram
+reconstruction.  The two lanes exhaust the same $290$ class pairs, agree on
+all $617$ class-level maps, and find neither a cross-class isometry nor a
+non-$S_4$ map.  Recorded coordinate transporters derive the corresponding
+$228{,}599$ maps on the original candidate pairs.  On the selected $82$
+atlas rows, candidate maps are additionally filtered against exact chamber
+masks to recover self-isometry groups and chirality.  Synthetic
+perturbations, coplanar subdivisions, a corner-set symmetry that fails the
+mask filter, and a non-$S_4$ synthetic isometry exercise the rejection paths.
+
+The tests establish completeness inside the declared finite universe.  They
+do not convert the universe into a statement about arbitrary dissections.

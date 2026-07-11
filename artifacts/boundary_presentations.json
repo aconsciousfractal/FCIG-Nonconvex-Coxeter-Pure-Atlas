@@ -1,0 +1,7544 @@
+{
+  "schema": "fcig.nonconvex_a3.public.boundary_presentations.v1",
+  "snapshot_date": "2026-07-11",
+  "status": "PASS_PUBLIC_DERIVED_ARTIFACT",
+  "pass": true,
+  "provenance": {
+    "derivation": "frozen S6 boundary projection joined exactly to S5 and release-qualified by O1",
+    "parents": {
+      "s5": {
+        "source_id": "s5",
+        "gate": "P18-S5",
+        "schema": "fcig.p18.s5.canonical_nonconvex_tile_orbit_atlas.v1",
+        "status": "PASS_CANONICAL_82_ROW_NONCONVEX_TILE_ORBIT_ATLAS",
+        "pass": true,
+        "source_payload_sha256": "C555CD07F05B07A800C579C08F9940297815E839D41DC451928A9DDB48035CED",
+        "source_raw_sha256": "B1977797F8E116AECAAD7F9158F5356C37E97AFF76511BF1468E1BA1E5F89B56"
+      },
+      "s6_boundary": {
+        "source_id": "s6_boundary",
+        "gate": "P18-S6-BOUNDARY-METRIC",
+        "schema": "fcig.p18.s6.boundary_metric_extension.v1",
+        "status": "PASS_TWO_LANE_EXACT_BOUNDARY_METRIC_EXTENSION",
+        "pass": true,
+        "source_payload_sha256": "0B383A653DD307F99907073BD4CCDF460C377EFEA8B4D36AA89D22DED564B5AC",
+        "source_raw_sha256": "61737EAFBCA7EF9AFD876EAC9FA0D044720A101CC35C7EB43CBE44360E3C1373"
+      },
+      "o1": {
+        "source_id": "o1",
+        "gate": "P18-S13-O1",
+        "schema": "fcig.p18.s13_o1.global_congruence_gate.v1",
+        "status": "PASS_GLOBAL_CONGRUENCE_EQUALS_LEFT_S4_AND_EXACT_COVER_COMPLETE",
+        "pass": true,
+        "source_payload_sha256": "8DD3A4704CA8967DD108BCD941449916791D1DF455650865AD75FBA9AD168C1F",
+        "source_raw_sha256": "5A9895F6952191B3ED63AEFFEEDAC9A897417F238D8F39F588917CC029EE1401",
+        "producer_script_sha256": "C464E5892812775A325C92861CD88C68AD5C9BA981F259753FEB08BDC0747AC8"
+      }
+    },
+    "parent_count": 3
+  },
+  "unit_edge_normalization": "regular tetrahedron embedded as the standard simplex in R4; all R4 squared distances are divided by 2",
+  "lane_contract": {
+    "published_atomic_delta_squared_certificate": {
+      "definition": "sum unit-edge-normalized squared lengths of non-coplanar boundary edges in the barycentric boundary triangulation, without merging adjacent collinear segments",
+      "source_role": "the unique replay lane that exactly reproduces all 15 admissible T2 appendix rows",
+      "limitations": [
+        "triangulation-dependent",
+        "non-maximal",
+        "not a Dehn invariant",
+        "not a general classifier"
+      ]
+    },
+    "maximal_reflex_boundary_profile": {
+      "definition": "merge connected elementary intervals only when supporting line, unordered oriented incident supporting-plane pair, and exact reflex/cosine class all agree",
+      "source_role": "P18-local exact boundary fingerprint resolving the published maximal-merge wording for nonconvex rows",
+      "limitations": [
+        "not the published T2 appendix table",
+        "not a Dehn invariant",
+        "not a general classifier"
+      ]
+    }
+  },
+  "exact_class_order": [
+    {
+      "id": "C_COS_ZERO_SQ_0",
+      "reflex": false,
+      "cos_sign": 0,
+      "cos_squared": [
+        0,
+        1
+      ],
+      "rounded_convex_angle": "90"
+    },
+    {
+      "id": "C_COS_POS_SQ_1_4",
+      "reflex": false,
+      "cos_sign": 1,
+      "cos_squared": [
+        1,
+        4
+      ],
+      "rounded_convex_angle": "60"
+    },
+    {
+      "id": "C_COS_POS_SQ_1_9",
+      "reflex": false,
+      "cos_sign": 1,
+      "cos_squared": [
+        1,
+        9
+      ],
+      "rounded_convex_angle": "70"
+    },
+    {
+      "id": "C_COS_POS_SQ_2_3",
+      "reflex": false,
+      "cos_sign": 1,
+      "cos_squared": [
+        2,
+        3
+      ],
+      "rounded_convex_angle": "35"
+    },
+    {
+      "id": "C_COS_NEG_SQ_1_4",
+      "reflex": false,
+      "cos_sign": -1,
+      "cos_squared": [
+        1,
+        4
+      ],
+      "rounded_convex_angle": "120"
+    },
+    {
+      "id": "R_COS_ZERO_SQ_0",
+      "reflex": true,
+      "cos_sign": 0,
+      "cos_squared": [
+        0,
+        1
+      ],
+      "rounded_reflex_angle": "270"
+    },
+    {
+      "id": "R_COS_POS_SQ_1_4",
+      "reflex": true,
+      "cos_sign": 1,
+      "cos_squared": [
+        1,
+        4
+      ],
+      "rounded_reflex_angle": "300"
+    },
+    {
+      "id": "R_COS_NEG_SQ_1_4",
+      "reflex": true,
+      "cos_sign": -1,
+      "cos_squared": [
+        1,
+        4
+      ],
+      "rounded_reflex_angle": "240"
+    }
+  ],
+  "summary": {
+    "row_count": 82,
+    "left_invariance_cases": 1968,
+    "boundary_triangle_count_total": 1672,
+    "published_atomic_edge_count_total": 1692,
+    "maximal_reflex_edge_count_total": 1506,
+    "exact_class_count": 8,
+    "published_atomic_unique_profiles": 70,
+    "published_atomic_collision_histogram": {
+      "1": 59,
+      "2": 10,
+      "3": 1
+    },
+    "published_atomic_collision_groups": [
+      [
+        "P18-NC-K06-M00006F",
+        "P18-NC-K06-M000077"
+      ],
+      [
+        "P18-NC-K06-M00114D",
+        "P18-NC-K06-M0011C5"
+      ],
+      [
+        "P18-NC-K08-M00215F",
+        "P18-NC-K08-M00249F"
+      ],
+      [
+        "P18-NC-K08-M003157",
+        "P18-NC-K08-M0035C5"
+      ],
+      [
+        "P18-NC-K12-M042BDF",
+        "P18-NC-K12-M06F09F"
+      ],
+      [
+        "P18-NC-K12-M0433DF",
+        "P18-NC-K12-M04F0DF"
+      ],
+      [
+        "P18-NC-K12-M052DFA",
+        "P18-NC-K12-M06D49F",
+        "P18-NC-K12-M07B4BA"
+      ],
+      [
+        "P18-NC-K12-M057DD2",
+        "P18-NC-K12-M068E9F"
+      ],
+      [
+        "P18-NC-K12-M07AA1F",
+        "P18-NC-K12-M07BA17"
+      ],
+      [
+        "P18-NC-K12-M0C5CD7",
+        "P18-NC-K12-M0D2CFA"
+      ],
+      [
+        "P18-NC-K12-M1725F8",
+        "P18-NC-K12-M17A4F8"
+      ]
+    ],
+    "published_atomic_exact_profile_stream_sha256": "6A6E32F2A21B5C456FB4869F487B8E55E64B9FE88DA4E96A12EFDC0DA02B3657",
+    "maximal_reflex_unique_profiles": 72,
+    "maximal_reflex_collision_histogram": {
+      "1": 63,
+      "2": 8,
+      "3": 1
+    },
+    "maximal_reflex_collision_groups": [
+      [
+        "P18-NC-K06-M00006F",
+        "P18-NC-K06-M000077"
+      ],
+      [
+        "P18-NC-K06-M00114D",
+        "P18-NC-K06-M0011C5"
+      ],
+      [
+        "P18-NC-K12-M042BDF",
+        "P18-NC-K12-M06F09F"
+      ],
+      [
+        "P18-NC-K12-M0433DF",
+        "P18-NC-K12-M04F0DF"
+      ],
+      [
+        "P18-NC-K12-M052DFA",
+        "P18-NC-K12-M06D49F",
+        "P18-NC-K12-M07B4BA"
+      ],
+      [
+        "P18-NC-K12-M057DD2",
+        "P18-NC-K12-M068E9F"
+      ],
+      [
+        "P18-NC-K12-M07AA1F",
+        "P18-NC-K12-M07BA17"
+      ],
+      [
+        "P18-NC-K12-M0C5CD7",
+        "P18-NC-K12-M0D2CFA"
+      ],
+      [
+        "P18-NC-K12-M1725F8",
+        "P18-NC-K12-M17A4F8"
+      ]
+    ],
+    "maximal_reflex_exact_profile_stream_sha256": "BF5B5EF991C64D1E2FECB1590F4555A9FA1455F0154361123A24EB0302835C11",
+    "published_atomic_convex_calibration_pass": 15,
+    "maximal_reflex_convex_table_matches": 5,
+    "maximal_reflex_convex_table_matching_types": [
+      "T1",
+      "T2",
+      "T3",
+      "T5",
+      "T11"
+    ],
+    "t16_published_atomic_70": [
+      3,
+      1
+    ],
+    "t16_maximal_reflex_70": [
+      6,
+      1
+    ],
+    "literal_line_only_mixed_class_rows": 71,
+    "line_class_merge_profile_difference_rows": 26,
+    "rejected_line_class_merge_edge_count_total": 1467,
+    "rejected_line_class_merge_unique_profiles": 78
+  },
+  "collision_ledgers": {
+    "published_atomic_delta_squared_certificate": {
+      "unique_profiles": 70,
+      "class_size_histogram": {
+        "1": 59,
+        "2": 10,
+        "3": 1
+      },
+      "collision_groups": [
+        [
+          "P18-NC-K06-M00006F",
+          "P18-NC-K06-M000077"
+        ],
+        [
+          "P18-NC-K06-M00114D",
+          "P18-NC-K06-M0011C5"
+        ],
+        [
+          "P18-NC-K08-M00215F",
+          "P18-NC-K08-M00249F"
+        ],
+        [
+          "P18-NC-K08-M003157",
+          "P18-NC-K08-M0035C5"
+        ],
+        [
+          "P18-NC-K12-M042BDF",
+          "P18-NC-K12-M06F09F"
+        ],
+        [
+          "P18-NC-K12-M0433DF",
+          "P18-NC-K12-M04F0DF"
+        ],
+        [
+          "P18-NC-K12-M052DFA",
+          "P18-NC-K12-M06D49F",
+          "P18-NC-K12-M07B4BA"
+        ],
+        [
+          "P18-NC-K12-M057DD2",
+          "P18-NC-K12-M068E9F"
+        ],
+        [
+          "P18-NC-K12-M07AA1F",
+          "P18-NC-K12-M07BA17"
+        ],
+        [
+          "P18-NC-K12-M0C5CD7",
+          "P18-NC-K12-M0D2CFA"
+        ],
+        [
+          "P18-NC-K12-M1725F8",
+          "P18-NC-K12-M17A4F8"
+        ]
+      ]
+    },
+    "maximal_reflex_boundary_profile": {
+      "unique_profiles": 72,
+      "class_size_histogram": {
+        "1": 63,
+        "2": 8,
+        "3": 1
+      },
+      "collision_groups": [
+        [
+          "P18-NC-K06-M00006F",
+          "P18-NC-K06-M000077"
+        ],
+        [
+          "P18-NC-K06-M00114D",
+          "P18-NC-K06-M0011C5"
+        ],
+        [
+          "P18-NC-K12-M042BDF",
+          "P18-NC-K12-M06F09F"
+        ],
+        [
+          "P18-NC-K12-M0433DF",
+          "P18-NC-K12-M04F0DF"
+        ],
+        [
+          "P18-NC-K12-M052DFA",
+          "P18-NC-K12-M06D49F",
+          "P18-NC-K12-M07B4BA"
+        ],
+        [
+          "P18-NC-K12-M057DD2",
+          "P18-NC-K12-M068E9F"
+        ],
+        [
+          "P18-NC-K12-M07AA1F",
+          "P18-NC-K12-M07BA17"
+        ],
+        [
+          "P18-NC-K12-M0C5CD7",
+          "P18-NC-K12-M0D2CFA"
+        ],
+        [
+          "P18-NC-K12-M1725F8",
+          "P18-NC-K12-M17A4F8"
+        ]
+      ]
+    }
+  },
+  "published_source_mismatch": {
+    "statement": "the T2 paper says maximal collinear segments are merged, but the appendix values are reproduced by the atomic lane only",
+    "published_atomic_matches": 15,
+    "maximal_reflex_matches": 5,
+    "t16_atomic_70_squared_sum": [
+      3,
+      1
+    ],
+    "t16_maximal_70_squared_sum": [
+      6,
+      1
+    ],
+    "t16_atomic_edges": 12,
+    "t16_maximal_edges": 6
+  },
+  "literal_line_only_rejection": {
+    "reason": "a connected collinear component may change its incident planes and exact dihedral class",
+    "rows_with_mixed_exact_classes": 71,
+    "line_class_merge_differs_from_geometric_rows": 26,
+    "rejected_line_class_unique_profiles": 78
+  },
+  "rows": [
+    {
+      "row_id": "P18-NC-K06-M00006F",
+      "k": 6,
+      "canonical_mask_hex": "00006F",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            9,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "514ACB8C0BA0A020BC8784610EC891BA305DBAEC12641B2D8E07BD0D9C3280CF"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            35,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "CD26B6EB0ABC41F893B852BE5ECE1DF183E45005A81FBE2C3549DFE0663AB654"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M000077",
+      "k": 6,
+      "canonical_mask_hex": "000077",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            9,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "514ACB8C0BA0A020BC8784610EC891BA305DBAEC12641B2D8E07BD0D9C3280CF"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            35,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "CD26B6EB0ABC41F893B852BE5ECE1DF183E45005A81FBE2C3549DFE0663AB654"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 14
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M00007D",
+      "k": 6,
+      "canonical_mask_hex": "00007D",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "6F94246461A037B40BB54ABE3BCB48CC145C70C8C7266123B3B50059C666865C"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 12,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            4,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "A39D7364E08DA97C3A5BC1721A38344507E6C5A000C3FFE1A4AD8F56F6D143EC"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M0000CF",
+      "k": 6,
+      "canonical_mask_hex": "0000CF",
+      "boundary_triangle_count": 12,
+      "boundary_triangulation_edge_count": 18,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "C78474F7223DE5725150D81E64E11E6DE9FAB02BFD008F333DD2CB353FDCBAE0"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 11,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "1C21D640774ED3104D462361B86660315E19AA8CAE5D4264C6C5EA1A60C4CBBC"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 11
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M000157",
+      "k": 6,
+      "canonical_mask_hex": "000157",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "3DE6A5DEEBCED5217C5E9631A2BD8F607C5E2B54816B6BA2689765347DE02BBB"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "36A8DC3D6381E9C7BEFC6D3DECFAF17E7757D07956703EBB79C3B756D1FF3E2D"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 16
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M00016D",
+      "k": 6,
+      "canonical_mask_hex": "00016D",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "4FEB4B5192E26EA57AAEE20D229ACFFB7202756272B90B9F030DEFBC0F449D41"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "41301CA0F82E087BBFDC3DB0785AFB9B6C125C7964FF2700E3721D3AEA474E59"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M0001CD",
+      "k": 6,
+      "canonical_mask_hex": "0001CD",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            9,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "BC9DA5AA026332C29B04C9E0796989B9C2036CC521F6E0D3ED83334CD1D0034E"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            9,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "BC9DA5AA026332C29B04C9E0796989B9C2036CC521F6E0D3ED83334CD1D0034E"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M00034D",
+      "k": 6,
+      "canonical_mask_hex": "00034D",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "C9DCCB1BEC083F6B26733308BF741D375DB4D5B27E92E8F76622900399F79573"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 12,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "9021F7DDA081CD124F4D376B757A71D74B0BA867922D799E859121E31D352942"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M001097",
+      "k": 6,
+      "canonical_mask_hex": "001097",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "C6364C76B7D522E9E168D21E79901176CA6F362F901F1616AC78F4241343AC72"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 11,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "49B11ECEB873A023D73640035D494661F7C4ADDB394D9D58F0991574B1F3AE2E"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 11
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M0010C7",
+      "k": 6,
+      "canonical_mask_hex": "0010C7",
+      "boundary_triangle_count": 12,
+      "boundary_triangulation_edge_count": 18,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 12,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            4,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "5B5786F27D8FDB0532DCA6D08B86A9A02BAE7F6BB99AE2ED9A3F298B6630AA31"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 10,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            4,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "A1FA147FCA1F98894014B1F22F8049388F9610AAE3E8A078C3051CCACE4849AA"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 10
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M00114D",
+      "k": 6,
+      "canonical_mask_hex": "00114D",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "EFB1612F7A08034720593D7ABF816BB5440379807365C2AF815D0376EA7BABCC"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "E9BBB51C9B074D8520B40DE92FCDCB8C7ED71875250C0830DB18204D2D8A3676"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 14
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M0011C5",
+      "k": 6,
+      "canonical_mask_hex": "0011C5",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "EFB1612F7A08034720593D7ABF816BB5440379807365C2AF815D0376EA7BABCC"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "E9BBB51C9B074D8520B40DE92FCDCB8C7ED71875250C0830DB18204D2D8A3676"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 13
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M001345",
+      "k": 6,
+      "canonical_mask_hex": "001345",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "6C1ECEBCF8D9D0F28C73E45B9229FF63772FB29365F7F2793C53BBB39249C5C1"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 11,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "1FCFB4F8EAA9F237F8B9F05347A853C9F7E8E6A4A58BFE7B0558287696B94E29"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 11
+      }
+    },
+    {
+      "row_id": "P18-NC-K06-M0020BA",
+      "k": 6,
+      "canonical_mask_hex": "0020BA",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 12,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "6EAE5A1060DA4C6A9C0FA362B9CCD30EB83043BC62B54398AE4246909121028A"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 8,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "17940D18EC56B688B2BF455C18DBE1F2213862F8BE16D7BDF6FD889D7E5E35DE"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 8
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00017F",
+      "k": 8,
+      "canonical_mask_hex": "00017F",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "E81677E54F1C3FBD3673E825B7F50DF9D72D8F7F0D9082E686A51113B80DFF63"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "E81677E54F1C3FBD3673E825B7F50DF9D72D8F7F0D9082E686A51113B80DFF63"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 16
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0010EF",
+      "k": 8,
+      "canonical_mask_hex": "0010EF",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "E50DF607DC9548C5D6D04A162DE0BD584A5DF07CA6165FEEAA52E1EE38F242E5"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            17,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "4A1ADC4B7516A5584FA605CEA4F3C2222C9320E6E0EF6A13979D6638C5BD1E2F"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00116F",
+      "k": 8,
+      "canonical_mask_hex": "00116F",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "278CF6C1D5E3EEF376C597D2C12C4E065CCA2630EFBF7ADC43D875A298310621"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            2,
+            3
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "7F72FFDC56B430D6753C7A78F3275588C55AD1D704C039DB8EB987E03BBA2B55"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0014AF",
+      "k": 8,
+      "canonical_mask_hex": "0014AF",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "875B84E55E9D9695FEC2F63DFBA94D5BE3E4EF405216E88679476B5B396FF23A"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "9243ACD4F77E3196FD9E688A4E83CA03989107709F71C9FDB09E3FFF17923747"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 3,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M001F45",
+      "k": 8,
+      "canonical_mask_hex": "001F45",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "304363FBEE4653254FC6D0FE3C93B26E648DA05B9710B3541FD00C61CE879902"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "69FA9CAE99C4E32AFCF608FE324D88427A6288564B42CD0385C2A122E41A5CF6"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 14
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0020DF",
+      "k": 8,
+      "canonical_mask_hex": "0020DF",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "3E8FD0F393FF7BA352D1691B1107F70485AC126BB1191FDF434DBF48BE67AE01"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            55,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "3FF132A2F2C203BF46D795DFA93A04B1DB14B6F6D3AD4B887476FA8328C2E1F3"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 13
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00215F",
+      "k": 8,
+      "canonical_mask_hex": "00215F",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "C22CCA34BA4666BD713C13D4C0E3139AEE1D5331EDE626FD9DD6BF1F9E8802F0"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            17,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "4E3A0D188DC5ACE4AB9B8A1A98C745604ECBE8882A6CA2C52E742851EA507D4A"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 3,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00249F",
+      "k": 8,
+      "canonical_mask_hex": "00249F",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "C22CCA34BA4666BD713C13D4C0E3139AEE1D5331EDE626FD9DD6BF1F9E8802F0"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "C22CCA34BA4666BD713C13D4C0E3139AEE1D5331EDE626FD9DD6BF1F9E8802F0"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0030CF",
+      "k": 8,
+      "canonical_mask_hex": "0030CF",
+      "boundary_triangle_count": 14,
+      "boundary_triangulation_edge_count": 21,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            2,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "398E54A7054786EB0E34CAC6BDE3BCD50BEE29B80B78C3D733351B8A88397A13"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            2,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            2,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "B1D9E6606B4FDF34595D2BA0EAF5687BAFAD51E62CEB7D038EC7F862A41C1B55"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00314F",
+      "k": 8,
+      "canonical_mask_hex": "00314F",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "0111347F6D7FB568AB40CD939F387A59989C85E836D72ED6D562A1C096ECF8BB"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            25,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "51809A5950D6D1E40D6A8595AE0BBEFCB6CCFE18C4EE234CD959DF7A0049B662"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M003157",
+      "k": 8,
+      "canonical_mask_hex": "003157",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "B28E51D3F32CD1EA88C49315F3677BA03E259B507F4FEADE884B9DEDF6C4F104"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            25,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "DEA47C1FD038B9ABB0C0B62935BFDB1F5703A7CD1CC9A296BCD536E7B229267A"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 3,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0031C7",
+      "k": 8,
+      "canonical_mask_hex": "0031C7",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "FF423A79FE7BFDA79067397EDB4FD1BBE35B4C3687981DACEDFF1BADEB369313"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "8474B038778DFB861A4314805792A01744BD1211A86B3066EFC5080768E401E1"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M00348F",
+      "k": 8,
+      "canonical_mask_hex": "00348F",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "11AF1CC5099810F9CB5D55206B1104DA6E04D7874143F229806617168017AB37"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            55,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "277651273FE18879787AED4F8F04CAB20E8E90CE5C3A7412D1DE00E84A88D9FD"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 13
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0034CD",
+      "k": 8,
+      "canonical_mask_hex": "0034CD",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "8208CDB28BB7092334344920DEFFB07AA147C4F4EF5B73BAD61EFEAE91DFC916"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "A6D1F76192319248F109E5DA4050B8F6BF36C68C60AD94DFD5738D476CAA6B6C"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M0035C5",
+      "k": 8,
+      "canonical_mask_hex": "0035C5",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "B28E51D3F32CD1EA88C49315F3677BA03E259B507F4FEADE884B9DEDF6C4F104"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "B28E51D3F32CD1EA88C49315F3677BA03E259B507F4FEADE884B9DEDF6C4F104"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M005157",
+      "k": 8,
+      "canonical_mask_hex": "005157",
+      "boundary_triangle_count": 16,
+      "boundary_triangulation_edge_count": 24,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "1588DDF652F26D2DB8D84BA968B32B8B08792D946F4AB1933A978468390B1644"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "EA41007B0B68D872F2426B22E8171C6B0A678E2EFDA05A649DDE8F105F655B1D"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 1,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M005353",
+      "k": 8,
+      "canonical_mask_hex": "005353",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "25B0355495FA10F99DE1F65A7117F95A2877DA518BFAB53E92A6152D7D61F506"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "25B0355495FA10F99DE1F65A7117F95A2877DA518BFAB53E92A6152D7D61F506"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 3,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K08-M007B28",
+      "k": 8,
+      "canonical_mask_hex": "007B28",
+      "boundary_triangle_count": 18,
+      "boundary_triangulation_edge_count": 27,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "F7F881B12E099E1E872E7BC07FA72B9AC9A7ABAA106D034145054B2974D5A1BC"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "A7984EC869338A55C369567D75BE5E174250D8F7028E3B65FF066F733D963C14"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M000FFF",
+      "k": 12,
+      "canonical_mask_hex": "000FFF",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            2,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "622D0DA7DFC9CF55EEBC39699EF5D9938EA4F467341A2616F6E60F10CC68D3D1"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            2,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            2,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "8A76E14F995362774B181EC03602683B7A54B9D144F4E102CF3C3DCC9FF23ED9"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0017FF",
+      "k": 12,
+      "canonical_mask_hex": "0017FF",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "E1CEEF8A3A7E45EE96B0D46F823F6591F30118280132950E461C1F4563B4F3F6"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            7,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "943BC905793B639D978F3A00F89C7DBE44DCBA4418046445667352DDE084458A"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 22
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M001FF7",
+      "k": 12,
+      "canonical_mask_hex": "001FF7",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "B00D8416AC9F856242D46173FB6E1F769F432B44D534E2E3FEA60A1A6AAE319F"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            7,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "D951BE801151CE70B1D1F67CC4582FFDBA9D5CA16CD98CA42469F59CFA4C45FF"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M002BFF",
+      "k": 12,
+      "canonical_mask_hex": "002BFF",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "E2E7563A4814A58E2A946F7FC2EDC83562C4D47ECB6FCC9897F37B3BE3CA0A87"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            47,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            7,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "A1FEB8EA738AEB7CE72205E544B03AAD4BEA49B3189BD338289EA21A1F349CF6"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 18
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M002FFB",
+      "k": 12,
+      "canonical_mask_hex": "002FFB",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "7252A41C4E927BF71C24DF6FD2FD361E370B4633D569D4597647F21D00EF1D8A"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            7,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "ACD5E52EFE91FD1AF851225AE5CEDC0DDFEFF96A9C9E904A6A9E0C19E17CF4AB"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0033FF",
+      "k": 12,
+      "canonical_mask_hex": "0033FF",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "0577B1EB5FCA976ACF41E2E8C3BAA0F6BE336F7D83D49D8B99D1FD15C262EEC5"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "AE74C6212DCCE393C45D562EDB496B7DD6ECFB1EADEFA5BEF8AFA1112BEAE4AC"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 14
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0055FF",
+      "k": 12,
+      "canonical_mask_hex": "0055FF",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "09908BCE92557EDF381EEC5D386A935A1EB65B7D10C6E54428392ED465EF24B8"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "AF33C568916F0354C90A4A7EA64D153FDC04D5E51D7EE223AF9872686BA2CEFE"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 16
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M007FD3",
+      "k": 12,
+      "canonical_mask_hex": "007FD3",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "54B5B0833201FDA6BBADB7DE60DF7D30C319AB077F4936196DCCDE208839EF8F"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            7,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "4F63B32EA351CBFE494EAC607711D33BB934923D5B8BFF5C42568E3E2870C8F6"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M012B7F",
+      "k": 12,
+      "canonical_mask_hex": "012B7F",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ]
+        },
+        "exact_profile_sha256": "9444E3D75651F70624A10FC77E35E814D3812B4485A0EF6F075B14A1B480C512"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ]
+        },
+        "exact_profile_sha256": "9444E3D75651F70624A10FC77E35E814D3812B4485A0EF6F075B14A1B480C512"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M012FFA",
+      "k": 12,
+      "canonical_mask_hex": "012FFA",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ]
+        },
+        "exact_profile_sha256": "F42C220AB13414C9DA42040F1510C44ED8190B47644FE0E7B3C9AC380B06D809"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            11,
+            24
+          ]
+        },
+        "exact_profile_sha256": "EBC4D20D415718866FFE6700362007C5E58663DCA2C9ACCB4CDC2AE2E1E0E3F4"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 23
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0417DF",
+      "k": 12,
+      "canonical_mask_hex": "0417DF",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "68F2EB07A8A707B663F8664F6A1D4F8742EB21A37B860687E526405848C405A8"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "F5D83BAE5D4933053FFB0D4A71A1445F2B87CB39AC35749E26F56F10265568F6"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M042BDF",
+      "k": 12,
+      "canonical_mask_hex": "042BDF",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "3E4400C4E71ECC2ABCB5A45668FF2A299CBB2A6C0B2525D3E8C59B3D0987A7EB"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "F78B7CC3FF414DE1AEF7B7C8F38C4C40FD8C3B96890431BD14745E86CEEF6FC9"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M042DFB",
+      "k": 12,
+      "canonical_mask_hex": "042DFB",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "6CF3C06B190CDF567974E54947F2A230E08866974D65EE58444FAB6EB9F89128"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            59,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "37EF142807A99277C78C2DA279CF0C4A2892DAE6C07DFC71E661812B8EC7C18C"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0433DF",
+      "k": 12,
+      "canonical_mask_hex": "0433DF",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "29780AC9791213FB9AFFB605DEFD7F70A9F52C2AF93A20EDB8DD507E418B5FFA"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            9,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "CA3E6DD285C5FDA1D92C6E8794CA0CA66AC452B902461C9C3D665FBE2FDF83E0"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0447F7",
+      "k": 12,
+      "canonical_mask_hex": "0447F7",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 28,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "9B39EBDE6D253467A2EC59ABD3E3201C5C015745775F36C58C800B8055D7E305"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            2
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "620F9EB29A8C60A3D9C37090D326EBE244619A41A70FBE4C04201E9223F1B286"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 25
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M044DDF",
+      "k": 12,
+      "canonical_mask_hex": "044DDF",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "087AF4D33289C2119BD8D3B6B737B3BAF5575734CD019081B0F4D7322B23CC7D"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "C0DAB131BEFD041453E46BEF7050DDEE106A7E629A6D4E3CA4ACBE8CB20F5A40"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0455DF",
+      "k": 12,
+      "canonical_mask_hex": "0455DF",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "777003ECF6045863DBEA36DE69C34D68527D0B9F6FE7ED87DBEC2CA76575C1C2"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "3B4708540F5EB52E8D8B133D0C8B6C237980A889D9E63B036241DE25D2FD7E99"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 18
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M045DD7",
+      "k": 12,
+      "canonical_mask_hex": "045DD7",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "F88BBDAADD0FCACBA01DDF7BADBA72127D6AFC7F6C5E0819391061B6FE9FAC73"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 15,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "8B62B93686257A49690AED893452AB08F662ECEE3DDFB45E92286D4B0CDB7299"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 15
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0471DF",
+      "k": 12,
+      "canonical_mask_hex": "0471DF",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            4,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "353AA487D61467FF3E33CB658B51B5120A7A44991E93051EA24A6DC254ED4268"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 12,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            4,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            2,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            24
+          ]
+        },
+        "exact_profile_sha256": "FEF5F670E8498387B2E6C4871CF2EF2FDCDE6A1FCAC6662E01FCF7382D60555D"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 12
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M047DD3",
+      "k": 12,
+      "canonical_mask_hex": "047DD3",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "1C1051C4642468F9D091E5451BDA2E9EFA606657AED3708D14D224FB317B420A"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "DE58CC34BC41D7F5A7BBED9DF027426A221DD6E5AC48E591098CFE9226F1460F"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M048EDF",
+      "k": 12,
+      "canonical_mask_hex": "048EDF",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "32EB2FB7E2D722705DD69E5CE42233EC8C87C6019D82DC248DFDC9F21FDEEFA0"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "8E84EC49B78AB07E18B00002C867BAD3F85AD60643E6B2477D8C01B6840B876B"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M04D4DF",
+      "k": 12,
+      "canonical_mask_hex": "04D4DF",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "1133741FB1359461CC5440D15AE6B188FF1D2E1D18789DE5C5F9B646FB96584B"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            11,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "E007528F609554CA50D5A7A7F090120C855B60CD2FDBF31A38F68471D453DEED"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 22
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M04F0DF",
+      "k": 12,
+      "canonical_mask_hex": "04F0DF",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "29780AC9791213FB9AFFB605DEFD7F70A9F52C2AF93A20EDB8DD507E418B5FFA"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            9,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "CA3E6DD285C5FDA1D92C6E8794CA0CA66AC452B902461C9C3D665FBE2FDF83E0"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 18
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M052B5F",
+      "k": 12,
+      "canonical_mask_hex": "052B5F",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 27,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "42A2FCAA5B7724C07ECBD692D2328681C1BA80E10C5772BD2F0CF1FEC9FA32EA"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            25,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "EF4D66374EC9EAC93B3FECA078019DDD69BC4B787EBFA61D16B334312A9DCAE0"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M052DFA",
+      "k": 12,
+      "canonical_mask_hex": "052DFA",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 29,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "DCBCE4B4F4FDA6310D5C1991382D71B07FC22F311F10E0E3440E2A74ACEC040E"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 28,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "AC796026A1C42E74DFD5D98BB7479815BAC7575E6E6FDA53AFF73D20B5BE4A64"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 8,
+        "rejected_line_class_merge_edge_count": 28
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M05335F",
+      "k": 12,
+      "canonical_mask_hex": "05335F",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "FB9E22900B73BF10650315E0A087678F0F020691C4A4EEC5A59796A601E4C338"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 18,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            59,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "527C9934365BF8C34C5C2369FB7F7DAAB520B77699B24F1966FC1AF9FF2B9095"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 18
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M05715F",
+      "k": 12,
+      "canonical_mask_hex": "05715F",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "4FD069F39085F26A3F92CB3B78544AB434443F3906B363F61A15170A2AD81C3E"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            8
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "3CE2F82983811EC6AAA66976A3D7488FFEE3C18BE98CE563E144152B5A1CD0C0"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 14
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M057DD2",
+      "k": 12,
+      "canonical_mask_hex": "057DD2",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 27,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "A107BA297A2DE5BFD8BAD6C01C868C7ED570B06F81F91ABC6543D5DD6E18D8B9"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "82573C14AD8097F4EF7873003FE2602292F9958581CADE5E0C310E4BBC2B0065"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 25
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M068E9F",
+      "k": 12,
+      "canonical_mask_hex": "068E9F",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 27,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "A107BA297A2DE5BFD8BAD6C01C868C7ED570B06F81F91ABC6543D5DD6E18D8B9"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "82573C14AD8097F4EF7873003FE2602292F9958581CADE5E0C310E4BBC2B0065"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 25
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M06D49F",
+      "k": 12,
+      "canonical_mask_hex": "06D49F",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 29,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "DCBCE4B4F4FDA6310D5C1991382D71B07FC22F311F10E0E3440E2A74ACEC040E"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 28,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "AC796026A1C42E74DFD5D98BB7479815BAC7575E6E6FDA53AFF73D20B5BE4A64"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 8,
+        "rejected_line_class_merge_edge_count": 28
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M06F09F",
+      "k": 12,
+      "canonical_mask_hex": "06F09F",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "3E4400C4E71ECC2ABCB5A45668FF2A299CBB2A6C0B2525D3E8C59B3D0987A7EB"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            1,
+            12
+          ]
+        },
+        "exact_profile_sha256": "F78B7CC3FF414DE1AEF7B7C8F38C4C40FD8C3B96890431BD14745E86CEEF6FC9"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M06F23E",
+      "k": 12,
+      "canonical_mask_hex": "06F23E",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "0FA0A5367575036E4F6C6B4CE9BA4864FD41C14F3AFFC26E26ADC9EB1999B4DA"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            13,
+            4
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "25D69B7B9FB7F5DFD8CB87FBF1E28A51D8D4104044278B37B0E79E28016822A9"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M07AA1F",
+      "k": 12,
+      "canonical_mask_hex": "07AA1F",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "F1D1C81622E096578958F7A24C15222CEC7201B59470A40F72A5B3BFFEC48462"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            47,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "699B31F9A31285FC61D3C9563E2113C731275DC6D8354191AA07AC092CD0473B"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M07B21F",
+      "k": 12,
+      "canonical_mask_hex": "07B21F",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "5B568A437C692A9FDA7E9E9F1CD51586FA387D281DB38F4EC546EF4979F0E28A"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            3,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "7F3FE1F9FBC80A7903F0585033D576491EF0D58995603676DA47883C794E945A"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 13
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M07B4BA",
+      "k": 12,
+      "canonical_mask_hex": "07B4BA",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 29,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "DCBCE4B4F4FDA6310D5C1991382D71B07FC22F311F10E0E3440E2A74ACEC040E"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 28,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "AC796026A1C42E74DFD5D98BB7479815BAC7575E6E6FDA53AFF73D20B5BE4A64"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 26
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M07BA17",
+      "k": 12,
+      "canonical_mask_hex": "07BA17",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "F1D1C81622E096578958F7A24C15222CEC7201B59470A40F72A5B3BFFEC48462"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 21,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            47,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "699B31F9A31285FC61D3C9563E2113C731275DC6D8354191AA07AC092CD0473B"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M07BE92",
+      "k": 12,
+      "canonical_mask_hex": "07BE92",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "F498CB3F22443F9A0E868708465C49F524FD01F82AED7C31B993F24E24C0ADAE"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "BD21C7DDF31906B95938C1BF15663C95DD6ACF79B4B8D977C753CF39ACAE4BF9"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0C5CD7",
+      "k": 12,
+      "canonical_mask_hex": "0C5CD7",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "D2A59E26F7BFA28775CBD3DA753B67219E2AF70DB1F48D4145FBD389B3521093"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "EAB2DDB9A10F9C2836230A99252307AE007137499EC23C778A489293F531B375"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0CC3F3",
+      "k": 12,
+      "canonical_mask_hex": "0CC3F3",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            8,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ]
+        },
+        "exact_profile_sha256": "8637DFCAB50F67CEA76F826DD02DC0054E238B2A83B966D47579E82B7BD95EE8"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            8,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            0,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            6
+          ]
+        },
+        "exact_profile_sha256": "9850F8CBFD28573ADE050BEA3C77D28A51BA05C708CDE0E25AB4596E710F9D87"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M0D2CFA",
+      "k": 12,
+      "canonical_mask_hex": "0D2CFA",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "D2A59E26F7BFA28775CBD3DA753B67219E2AF70DB1F48D4145FBD389B3521093"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            43,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "EAB2DDB9A10F9C2836230A99252307AE007137499EC23C778A489293F531B375"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 24
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1455D7",
+      "k": 12,
+      "canonical_mask_hex": "1455D7",
+      "boundary_triangle_count": 20,
+      "boundary_triangulation_edge_count": 30,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 14,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "2C9AD102383BF4AC846542BCD233D22BFDDE07F6AC3DAC7DD0C393F33B96F963"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 9,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            4,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            4
+          ]
+        },
+        "exact_profile_sha256": "A3AD842F4C2E5D39F6781668F26FF84DDAB33F0A8E256FC5D3AC3ECDDD814D6E"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 9
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1471D7",
+      "k": 12,
+      "canonical_mask_hex": "1471D7",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "AB02DAA2EC61145AB89BBD6206612A29AD274DF372F8FE252B751F24CD4C7D7F"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 16,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "36D09897C54C5D5457E1A11697E6F85501092A15B7B87B2C69CFC36C152CF462"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 16
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1475D3",
+      "k": 12,
+      "canonical_mask_hex": "1475D3",
+      "boundary_triangle_count": 22,
+      "boundary_triangulation_edge_count": 33,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "595950FA428DA7CEA3C766869735A198099CF61681F8959E26E7CADF1A4DF7DE"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 13,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            6
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            5,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            3,
+            8
+          ]
+        },
+        "exact_profile_sha256": "4B1D86783B247C1918C3BEC6D049A1BE62BFAD61FC4B836F45354AA72AE7CB49"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 13
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1525FA",
+      "k": 12,
+      "canonical_mask_hex": "1525FA",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ]
+        },
+        "exact_profile_sha256": "07B489378696BAE4AEFDE7304DAFC33852611BC31199EB121012FF23C8150969"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            7,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ]
+        },
+        "exact_profile_sha256": "253AFB0354EB79D5C05C2C114626AC63B4FACE85D67D6F424306CDAAA559818B"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 20
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M153357",
+      "k": 12,
+      "canonical_mask_hex": "153357",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 27,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "FA6B98DE856F4B66D3E84C54B3483CE173987873640C94200F8ED47CCF2C4DB2"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 26,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            17,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "1B04CFBCB3CB766ADEE8CCEC7A55D1F9258C38AF25FE753CD7E697CB403E0257"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 6,
+        "rejected_line_class_merge_edge_count": 26
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1575D2",
+      "k": 12,
+      "canonical_mask_hex": "1575D2",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 22,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ]
+        },
+        "exact_profile_sha256": "EB8F5DE8886D0E0C61133B1DA99F4791391F3F8DAFE16C57DA4242629F24AD4C"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 19,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            11,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            7,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            19,
+            24
+          ]
+        },
+        "exact_profile_sha256": "87706D1FA9BFF067AAC737FB56F9DBEA3D5F4AE631C68CF606B1C70DD77C4F3D"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 19
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1725F8",
+      "k": 12,
+      "canonical_mask_hex": "1725F8",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "D122E6AF41EEB98B2733C6B547787F9340CB4EF57608EC70A88BDE9B771D888D"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "DFB6FCC4089D299BFE8F3CADD29419D0D826F89F98776589901EF52B2A612929"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M17A4F8",
+      "k": 12,
+      "canonical_mask_hex": "17A4F8",
+      "boundary_triangle_count": 26,
+      "boundary_triangulation_edge_count": 39,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 25,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            3,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "D122E6AF41EEB98B2733C6B547787F9340CB4EF57608EC70A88BDE9B771D888D"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            31,
+            24
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            4
+          ],
+          "C_COS_POS_SQ_2_3": [
+            5,
+            2
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            8
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            24
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            5,
+            12
+          ]
+        },
+        "exact_profile_sha256": "DFB6FCC4089D299BFE8F3CADD29419D0D826F89F98776589901EF52B2A612929"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 4,
+        "rejected_line_class_merge_edge_count": 23
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1CD1D3",
+      "k": 12,
+      "canonical_mask_hex": "1CD1D3",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 24,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "1FA4024067B934B8E94F1F778779B025EEA94B86A057015D3C189473D15FD515"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 23,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            23,
+            12
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            1,
+            4
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "3AE5FFB54624EF8D2446752940D3781E04851958FCC32289C609014CF0CF6D46"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 2,
+        "rejected_line_class_merge_edge_count": 21
+      }
+    },
+    {
+      "row_id": "P18-NC-K12-M1CD4C7",
+      "k": 12,
+      "canonical_mask_hex": "1CD4C7",
+      "boundary_triangle_count": 24,
+      "boundary_triangulation_edge_count": 36,
+      "published_atomic_delta_squared_certificate": {
+        "edge_count": 20,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            1,
+            1
+          ],
+          "C_COS_POS_SQ_2_3": [
+            1,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "76F9AEE7A9D096FC6F0B6345D9EDA14D932F2B14A4F9D5D9418EFFF41EA1CBC0"
+      },
+      "maximal_reflex_boundary_profile": {
+        "edge_count": 17,
+        "exact_profile": {
+          "C_COS_ZERO_SQ_0": [
+            5,
+            3
+          ],
+          "C_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "C_COS_POS_SQ_1_9": [
+            3,
+            2
+          ],
+          "C_COS_POS_SQ_2_3": [
+            2,
+            1
+          ],
+          "C_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ],
+          "R_COS_ZERO_SQ_0": [
+            0,
+            1
+          ],
+          "R_COS_POS_SQ_1_4": [
+            1,
+            12
+          ],
+          "R_COS_NEG_SQ_1_4": [
+            0,
+            1
+          ]
+        },
+        "exact_profile_sha256": "6A65E3DC4FBC3B33D31089C4A7F4A4B47A735B010741EFA01938EE2FB15AC892"
+      },
+      "literal_line_only_diagnostic": {
+        "mixed_exact_class_component_count": 0,
+        "rejected_line_class_merge_edge_count": 17
+      }
+    }
+  ],
+  "checks": {
+    "oracle_expectations_match": true,
+    "boundary_triangle_manifold": true,
+    "outward_reflex_predicates_exact": true,
+    "left_invariance_1968_cases": true,
+    "published_atomic_calibration_15_of_15": true,
+    "maximal_lane_kept_distinct_from_published_table": true,
+    "literal_line_only_merge_rejected": true
+  },
+  "payload_sha256_without_self_field": "4DE1BE63EC5305D8EA20112B5446C2B53091EB94355BE0E6508BC59ECE892F1D"
+}

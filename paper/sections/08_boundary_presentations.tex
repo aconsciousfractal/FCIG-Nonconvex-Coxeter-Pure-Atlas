@@ -1,0 +1,49 @@
+\section{Two exact boundary presentations}\label{sec:boundary}
+
+The contact complex records how pieces meet one another.  A different
+question asks how much exact metric information is retained by a presentation
+of one piece's polyhedral boundary.  This section records a controlled
+sensitivity result; it is not used to prove the atlas theorem.
+
+Use the standard simplex of \cref{sec:model} and divide squared distances by
+$2$, so the tetrahedron has unit edge length.  Boundary edges are classified
+by their exact incident-plane pair, convex/reflex status, and squared cosine
+of the dihedral angle.  Eight exact classes occur.  For each class we sum the
+unit-normalised squared edge lengths.
+
+The two presentations differ only in subdivision convention.
+\begin{description}[leftmargin=2.7em,style=nextline]
+\item[Atomic presentation.]
+Retain the edges of the barycentric boundary triangulation and sum all
+noncoplanar elementary intervals without collinear merging.
+\item[Maximal-reflex presentation.]
+Merge connected collinear intervals precisely when the supporting line, the
+unordered oriented incident-plane pair, and the exact reflex/cosine class
+agree.
+\end{description}
+
+\begin{proposition}[Presentation sensitivity]\label[proposition]{prop:boundary}
+Across the $82$ atlas rows, the atomic presentation contains $1{,}692$
+counted edges and produces $70$ distinct exact profiles.  The maximal-reflex
+presentation contains $1{,}506$ edges and produces $72$ profiles.  On the
+full-tetrahedron calibration row, the total unit-normalised squared-edge sum
+is $3$ in the atomic presentation and $6$ in the maximal presentation.
+\end{proposition}
+\begin{proof}
+The boundary triangles are reconstructed from the exact barycentric chamber
+vertices.  Supporting lines, plane normals, reflex signs, squared cosines,
+and squared lengths are rational or quadratic data compared without floating
+point.  The atomic lane reproduces all $15$ rows of the earlier convex
+appendix; the maximal lane applies the declared merging equivalence
+independently.  Equality grouping gives the displayed edge and profile
+counts.  For the full tetrahedron each original unit edge is split into two
+half-edges: the atomic contribution is
+$6\cdot2\cdot(1/2)^2=3$, while maximal merging restores the six unit edges.
+\end{proof}
+
+Neither presentation is a Dehn invariant.  Dehn data are linear in edge
+length and additive under subdivision, whereas a squared-length sum is
+nonlinear.  The numbers $3$ and $6$ therefore describe two explicit
+presentation conventions rather than an error and a correction.  Classical
+scissors-congruence and Dehn-invariant results remain separate
+\cite{Sydler1965}.

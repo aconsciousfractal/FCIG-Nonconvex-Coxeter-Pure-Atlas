@@ -1,0 +1,27 @@
+{
+  "schema": "fcig.nonconvex_a3.public.figure_provenance.v1",
+  "snapshot_date": "2026-07-11",
+  "status": "PASS_FIGURE_HASH_AND_LICENSE_PROVENANCE",
+  "pass": true,
+  "figures": [
+    {
+      "exported_path": "paper/figures/a3_chamber_graph.pdf",
+      "upstream_repository": "Congruent-Coxeter-pure-partitions-of-the-regular-tetrahedron",
+      "upstream_commit": "9357c07",
+      "upstream_path": "a3_chamber_graph.pdf",
+      "license": "CC-BY-4.0",
+      "bytes": 13672,
+      "sha256": "B68684B8CD7F19772730D54DA40FAEE7ADA05E3C1F3A220B7ADCF9700817DF42"
+    },
+    {
+      "exported_path": "paper/figures/t2_nonconvex_example.pdf",
+      "upstream_repository": "Congruent-Coxeter-pure-partitions-of-the-regular-tetrahedron",
+      "upstream_commit": "9357c07",
+      "upstream_path": "t2_nonconvex_example.pdf",
+      "license": "CC-BY-4.0",
+      "bytes": 13750,
+      "sha256": "3E521B5394889E80A64CBF2A676609D330F4A83C9E0D194203C72922236F990D"
+    }
+  ],
+  "payload_sha256_without_self_field": "779B6FB07D0159DC754BFA4C20039B69ABAB5845349A840B45608EC38129EDA2"
+}

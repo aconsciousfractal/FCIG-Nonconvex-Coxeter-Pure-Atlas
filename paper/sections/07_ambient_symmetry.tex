@@ -1,0 +1,199 @@
+\section{Ambient congruence, handedness, and transitivity}
+\label{sec:ambient}
+
+\subsection{A subdivision-insensitive corner locus}
+
+The boundary triangulation of $|U|_T$ contains vertices introduced only by
+subdivision of a planar face or a straight edge.  To obtain a geometric
+screen independent of those artefacts, define $C_3(U)$ to be the set of
+boundary points at which the span of the incident local boundary-plane
+normals has rank three.  Coplanar subdivision does not change this locus.
+
+\begin{lemma}[Completeness of the mesh-vertex corner screen]
+\label[lemma]{lem:corner-strata}
+For every chamber union $U$, each point of $C_3(U)$ is a vertex of the
+barycentric boundary mesh.  Equivalently, computing the normal rank at all
+boundary mesh vertices finds the complete rank-three locus, whether or not
+the polyhedral boundary is manifold along every mesh edge.
+\end{lemma}
+\begin{proof}
+At the relative interior of a boundary triangle there is one local boundary
+plane, so the normal rank is one.  At the relative interior of a mesh edge
+$e$, every incident boundary plane contains the direction of $e$.  All its
+normals therefore lie in the two-dimensional subspace perpendicular to that
+direction inside the three-dimensional affine space $H$, so their rank is at
+most two.  This argument does not use manifold edge incidence.  Every
+remaining boundary stratum is a mesh vertex.
+\end{proof}
+
+\begin{lemma}[Corner-locus covariance]\label[lemma]{lem:corner-covariance}
+If an affine Euclidean isometry $F:H\to H$ maps $|U|_T$ onto $|V|_T$, then
+$F(C_3(U))=C_3(V)$.  If $C_3(U)$ affinely spans $H$, an isometry is uniquely
+determined by the images of any affine basis of four locus points.
+\end{lemma}
+\begin{proof}
+An isometry maps boundary planes to boundary planes and preserves the rank of
+their normal span, proving covariance.  An affine map on a three-dimensional
+affine space is determined by four affinely independent points.  The
+isometry condition is then an exact equality of Gram matrices.
+\end{proof}
+
+\subsection{Global rigidity on the eligible carrier}
+
+Let
+\[
+ \mathcal E=\{U\subseteq S_4:U\ne\varnothing,\quad
+ \Gamma[U]\text{ is connected},\ |U|\mid24\}.
+\]
+The divisibility condition loses no possible congruent cover, because all
+chambers have the same volume.  The exhaustive reduction of
+\cref{tab:reduction} gives $|\mathcal E/S_4|=2{,}874$.  The global gate
+constructs $C_3(U)$ for every one of these representatives before making any
+exact-cover decision.  Its load-bearing counts are shown in
+\cref{tab:global-rigidity}.
+
+\begin{table}[ht]
+\centering
+\caption{Exact all-candidate congruence audit.  Pair counts include the
+diagonal.  Class maps are enumerated on canonical $S_4$ corner classes;
+all-candidate maps are obtained from them by the recorded transporters.}
+\label{tab:global-rigidity}
+\begin{tabular}{@{}lr@{}}
+\toprule
+audit stage & count\\
+\midrule
+eligible canonical candidates & $2{,}874$\\
+all unordered candidate pairs & $4{,}131{,}375$\\
+rejected by unequal volume & $568{,}587$\\
+rejected by exact corner-distance signature & $3{,}460{,}040$\\
+candidate pairs surviving both screens & $102{,}748$\\
+canonical $S_4$ corner classes & $274$\\
+canonical class pairs exhausted by both exact lanes & $290$\\
+exact maps on canonical classes & $617$\\
+maps derived on all candidate pairs & $228{,}599$\\
+cross-class isometric pairs / non-$S_4$ maps / lane disagreements & $0/0/0$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{theorem}[Eligible-carrier congruence rigidity]
+\label{thm:global-rigidity}
+For $U,V\in\mathcal E$, the polyhedra $|U|_T$ and $|V|_T$ are freely
+Euclidean congruent if and only if $V=gU$ for some $g\in S_4$.
+\end{theorem}
+\begin{proof}
+The reverse implication follows from the coordinate isometry $\Phi_g$.
+Suppose an isometry $F:H\to H$ maps $|U|_T$ onto $|V|_T$.  By
+\cref{lem:corner-covariance}, it maps $C_3(U)$ isometrically onto $C_3(V)$.
+The exact audit finds affine rank three for all $2{,}874$ canonical candidate
+loci.  By \cref{lem:corner-strata}, this is the complete rank-three locus:
+the $1{,}809$ candidates with nonmanifold mesh-edge incidence require no
+extra hypothesis, and the independent edge-stratum audit finds zero
+rank-three nonvertex strata.
+
+Coordinate canonicalisation reduces the candidate loci to $274$ exact
+$S_4$ classes.  Any isometry of two original loci conjugates, by their
+recorded coordinate transporters, to a map between canonical classes.
+Exact distance signatures leave the $290$ class pairs in
+\cref{tab:global-rigidity}.  Weighted distance-graph backtracking and
+affine-basis Gram reconstruction independently exhaust those pairs and agree
+on all $617$ class-level maps.  No two distinct canonical classes are
+isometric, and every enumerated map is induced by one coordinate permutation
+$\Phi_g$.  The underlying covariance is checked once at the primitive level:
+$24$ chamber bijections, $576$ chamber tetrahedra, $2{,}304$ chamber facets,
+$109{,}440$ facet-incidence comparisons, and $2{,}304$ normal lines imply all
+$2{,}874\cdot24=68{,}976$ candidate-action cases.
+
+Consequently $F$ and some $\Phi_g$ agree on $C_3(U)$.  Since that locus
+affinely spans $H$, \cref{lem:corner-covariance} gives $F=\Phi_g$ on all of
+$H$.  Hence $|V|_T=F(|U|_T)=\Phi_g(|U|_T)=|gU|_T$.  The closed Coxeter
+chambers have pairwise disjoint relative interiors, so their union encoding
+is injective; therefore $V=gU$.
+\end{proof}
+
+\begin{corollary}[Complete congruent Coxeter-pure atlas]
+\label[corollary]{cor:congruent-atlas}
+A connected Coxeter-pure piece covers $T$ by congruent Coxeter-pure copies if
+and only if it has an exact left-translate cover.  Up to free congruence,
+there are exactly $97$ such pieces: $15$ convex and $82$ nonconvex.  The
+nonconvex classes have sizes $6,8,12$ with multiplicities $14,18,50$.
+Thus the nonconvex Coxeter-pure problem of \cite{BabanskyyT2} is resolved
+within the fixed chamber carrier of \cref{sec:model}.
+\end{corollary}
+\begin{proof}
+In a congruent Coxeter-pure cover, equal volume forces the common chamber
+count to divide $24$, so every member belongs to $\mathcal E$.  Fixing one
+member $U$, \cref{thm:global-rigidity} writes every other member as $gU$.
+Interior disjointness and union $T$ then give an exact left-translate cover.
+The converse uses the coordinate isometries $\Phi_g$.  The counts and the
+convexity split are \cref{thm:left-atlas}.
+\end{proof}
+
+\subsection{Tile congruence and chirality}
+
+For every atlas row, $C_3(U)$ spans $H$.  We enumerate its complete weighted
+distance-graph isomorphisms in two independent ways: backtracking on exact
+distance profiles and affine-basis Gram reconstruction.  Each candidate map
+is converted, when possible, to the unique coordinate permutation $\Phi_g$
+and filtered by exact chamber-mask equality.  A corner-set symmetry is only
+a candidate; it need not preserve the full piece.
+
+\begin{theorem}[Ambient tile classification]\label{thm:tile-congruence}
+The $82$ atlas rows are $82$ distinct free Euclidean congruence classes.
+They split into $159$ classes under orientation-preserving congruence.  Of
+the full classes, $77$ are chiral and $5$ achiral, so
+\[
+ 159=2\cdot77+5.
+\]
+For every row, the full Euclidean self-isometry group equals the left tile
+stabiliser $H_U$.
+\end{theorem}
+\begin{proof}
+There are $3{,}321$ unordered cross-row pairs and $82$ diagonal pairs.  Exact
+distance signatures reject $3{,}253$ cross pairs; the two independent
+isometry algorithms examine the remaining $68$.  Across all $3{,}403$ pairs
+including the diagonal, they produce $539$ candidate corner maps.  Every
+candidate is induced by a coordinate permutation.  The mask filter leaves no
+cross-row shape congruence and identifies every self-isometry with $H_U$.
+Restricting the coordinate permutations to $A_4$ yields the oriented split
+and the stated chirality count.
+\end{proof}
+
+This is the finer rowwise statement on the selected nonconvex atlas.
+\Cref{thm:global-rigidity} supplies the logically prior all-candidate
+completeness; the exact mask filter here identifies self-isometry groups and
+the orientation-preserving split.
+
+\subsection{Whole partitions}
+
+For a cover $\C$, the union of its pieces is the entire tetrahedron $T$.
+Any congruence between two whole partitions therefore maps $T$ onto itself,
+permutes its four extreme vertices, and belongs to the coordinate $S_4$.
+Unlike the tile argument, this reduction requires no corner-locus screen.
+
+\begin{theorem}[Partition congruence and finite-container transitivity]
+\label{thm:partition-congruence}
+The $86$ global-left cover orbits are exactly $86$ full Euclidean congruence
+classes of whole partitions.  They split into $151$ orientation-preserving
+classes, with $65$ chiral and $21$ achiral full classes.
+
+Every one of the $86$ partitions is tile-transitive under its full container
+symmetry group $K_\C$.  Exactly $69$ are tile-transitive under the even
+subgroup $K_\C\cap A_4$.  In the remaining $17$ cases the cover stabiliser
+has type $C_4$, and an orientation-reversing symmetry is necessary for piece
+transitivity.
+\end{theorem}
+\begin{proof}
+An isometry of a whole partition preserves its union $T$ and is therefore a
+coordinate permutation.  Exact cover canonicalisation has already quotiented
+this full $S_4$ action, proving the first count.  Restriction to $A_4$ gives
+the $151=2\cdot65+21$ oriented classes.  Direct orbit computation of $K_\C$
+on the pieces gives one orbit in all $86$ cases; repeating with the even
+subgroup gives one orbit in $69$.  The stabiliser inventory identifies all
+$17$ failures as type $C_4$.
+\end{proof}
+
+The term \emph{finite-container tile-transitive} is used to prevent a common
+overreading.  These are partitions of one tetrahedron; the theorem does not
+construct or classify periodic tilings of $\mathbb R^3$.  Moreover, an odd
+tetrahedral isometry need not be reflection in a plane.

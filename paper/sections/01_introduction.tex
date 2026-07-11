@@ -1,0 +1,133 @@
+\section{Introduction}\label{sec:introduction}
+
+\subsection{From the convex catalogue to the nonconvex atlas}
+
+The barycentric subdivision of a regular tetrahedron is simultaneously a
+geometric dissection into $24$ congruent orthoschemes and the spherical
+Coxeter complex of type $A_3$ coned to the barycentre.  This coincidence
+makes a finite classification possible: unions of chambers become subsets of
+$S_4$, adjacency is a Cayley-graph relation, and tetrahedral relabelling is
+left multiplication.  The finite model is small enough for exhaustive
+enumeration but large enough for nonconvexity, multiple exact covers,
+chirality, and contact phenomena that do not occur in the convex catalogue.
+
+The convex theory was developed in \cite{BabanskyyT2}.  There, connected
+convex chamber unions were identified with poset cones, and the tiling pieces
+were classified by the $15$ series--parallel poset types on four elements.
+The same project reported an independent exhaustive count
+\[
+  97=15+82
+\]
+of connected left-translate tiling orbits, with $82$ nonconvex rows, and
+posed the classification of connected nonconvex chamber unions that tile by
+congruent copies as an open problem.  The numerical split is therefore
+self-prior-art.  The purpose of this paper is to close the congruence gap
+left by that audit and replace the bare count by a canonical, structurally
+complete, and independently replayable atlas.
+
+Four questions drive the construction.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item Does free Euclidean congruence enlarge a left $S_4$ orbit anywhere in
+the complete eligible chamber-union carrier?
+\item Can the $82$ rows be separated by an intrinsic invariant that respects
+the locked tetrahedral action?
+\item How many inequivalent exact covers does each tile admit, and what is the
+algebraic structure of its multiplier choices?
+\item Which contact and symmetry data survive after local compression, and
+where do local equivalences fail to assemble globally?
+\end{enumerate}
+
+The answers use four different layers.  An all-candidate rank-three
+corner-locus theorem identifies free congruence with the locked left action.
+The labelled right Patterson function separates tile orbits.  Exhaustive
+exact-cover and multiplier enumeration describes all partitions inside the
+finite carrier.  Exact rank-coloured barycentric intersections then recover
+contact, handedness, and finite-container transitivity.
+
+\subsection{Main results}
+
+The main theorem packages the numerical statements; precise definitions and
+stronger typed formulations appear in later sections.
+
+\begin{theorem}[Nonconvex $A_3$ chamber atlas: overview]
+\label{thm:overview}
+In the fixed $24$-chamber $A_3$ dissection of the regular tetrahedron, under
+the action and equivalences of \cref{sec:model}, the following hold.
+\begin{enumerate}[label=(\alph*),leftmargin=2.2em]
+\item There are exactly $82$ free-congruence classes of connected
+halfspace-nonconvex pieces that tile by congruent Coxeter-pure copies.  Every
+such copy is a left $S_4$ translate.  Their chamber sizes are $6,8,12$, with
+multiplicities $14,18,50$.
+\item The full element-labelled right Patterson vector separates the $82$
+orbits.  Conjugacy-class sums, within-class coordinate multisets, and the
+fully unlabelled coordinate multiset yield respectively $20,33,32$ classes.
+\item The $82$ tiles admit $786$ exact covers in $86$ global-left cover
+orbits.  Their $1{,}148$ multiplier selectors form $102$ selector orbits,
+with the exact taxonomy $90+2+10$ described in \cref{sec:covers}.
+\item Canonical representatives of the $86$ cover orbits have $212$
+within-cover contact edges and $82$ edgewise signatures.  Two pairs are
+edgewise equivalent but not globally aligned.
+\item The atlas has $82$ full Euclidean and $159$ orientation-preserving tile
+classes, split into $77$ chiral and $5$ achiral full classes.  The $86$
+partition classes split into $151$ oriented classes; all $86$ are
+finite-container tile-transitive and $69$ are rotation-tile-transitive.
+\end{enumerate}
+\end{theorem}
+
+Part~(a) combines the left-exact-cover census with the independent
+all-candidate rigidity theorem \cref{thm:global-rigidity}.  The latter ranges
+over all $2{,}874$ eligible connected chamber-union orbits, not merely the
+$82$ positive rows, and shows that every congruent Coxeter-pure cover is
+already a left-translate cover; see \cref{cor:congruent-atlas}.  Here
+\emph{Coxeter-pure} means that every partition member remains a union of the
+fixed $A_3$ chambers.
+
+The result in part~(b) is deliberately bounded.  Patterson functions and
+homometry are classical \cite{MandereauEtAl2011,RosenblattSeymour1982,
+GenuysPopoff2018}.  We prove injectivity only on the displayed $82$-row
+family, not for arbitrary subsets of a finite group.  Likewise, the contact
+and symmetry statements are about a finite tetrahedral container, not a
+periodic monohedral tiling of Euclidean space.
+
+\subsection{Why the labels and types matter}
+
+Several superficially similar objects must remain distinct.  A tile orbit is
+not a cover orbit; a cover is not a multiplier selector; the stabiliser of a
+tile is not the stabiliser of a cover; an edgewise family of contact
+equivalences is not one globally coherent equivalence.  Losing these types
+creates false uniqueness and false local-to-global statements.  The paper
+therefore fixes all actions, quotient relations, and quantifier orders before
+stating the enumerative results.
+
+The same discipline explains the Patterson theorem.  Left multiplication
+fixes every labelled coordinate, while right multiplication conjugates the
+coordinate labels.  The values alone do not suffice: all three natural label
+compressions collide.  Thus the nonabelian labelling is not decorative data;
+it is the separating information on this carrier.
+
+\subsection{Logical status and organisation}
+
+The three-way equivalence between halfspace, chamber-geodesic, and Euclidean
+convexity for connected $A_3$ chamber unions is imported from
+\cite{BabanskyyT2}.  All enumerations, Patterson identities, exact-cover
+classifications, contact comparisons, and ambient congruence calculations in
+this paper use exact integer or rational arithmetic.  The companion package
+fully reconstructs the connected and eligible census, the global congruence
+gate, and the congruent-copy exact-cover closure.  The Patterson, cover,
+selector, contact, boundary, and ambient-symmetry layers are distributed as
+exact parent-pinned snapshots with record hashes and public structural
+recheckers; their production builders remain internal.  In particular, the
+congruence statement is deduced only after the complete eligible carrier has
+passed both exact isometry lanes.  A machine certificate supports a finite
+proof; its stated replay level is part of the claim boundary and does not
+enlarge the theorem's scope.
+
+\Cref{sec:model} fixes the geometric and group-theoretic model.
+\Cref{sec:finite-reduction} proves the finite reduction and constructs the
+atlas.  \Cref{sec:patterson} develops the separating invariant.
+\Cref{sec:covers,sec:contacts} classify covers, selectors, and contact
+complexes.  \Cref{sec:ambient} treats congruence and transitivity, and
+\cref{sec:boundary} records a presentation-sensitivity result.  The final
+sections delimit prior art and give the replay contract.  The appendices
+provide the search proof, the complete $82$-row catalogue, and a
+theorem-to-certificate crosswalk.

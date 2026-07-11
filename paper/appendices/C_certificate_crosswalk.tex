@@ -1,0 +1,56 @@
+\section{Theorem-to-certificate crosswalk}
+\label{app:certificate-crosswalk}
+
+\begin{longtable}{@{}
+>{\raggedright\arraybackslash}p{0.22\textwidth}
+>{\raggedright\arraybackslash}p{0.27\textwidth}
+>{\raggedright\arraybackslash}p{0.42\textwidth}@{}}
+\toprule
+paper result & principal public artifact & independently checked fields\\
+\midrule
+\endfirsthead
+\toprule
+paper result & principal public artifact & independently checked fields\\
+\midrule
+\endhead
+\cref{thm:left-atlas} &
+\path{artifacts/bounded_census.json},
+\path{artifacts/nonconvex_tile_atlas.json} &
+$1{,}210{,}648$, $67{,}681$, $2{,}874$, $97$, $15/82$; row stream;
+$14/18/50$ size distribution\\
+\addlinespace
+\cref{thm:global-rigidity,cor:congruent-atlas} &
+\path{artifacts/global_congruence_gate.json} &
+$2{,}874$ spanning loci; zero rank-three edge strata; $290$ class-pair
+comparisons; $617$ class maps and $228{,}599$ derived maps; zero cross-class,
+non-$S_4$, and lane-disagreement cases; congruent-cover set $=97=15+82$\\
+\addlinespace
+\cref{thm:patterson,lem:complement} &
+\path{artifacts/nonconvex_tile_atlas.json} &
+Patterson identities; $1{,}968$ left-action cases; $82/20/33/32$ classes;
+$24/17$ labels; $50/50$ complement absorption\\
+\addlinespace
+\cref{thm:covers,thm:carrier} &
+\path{artifacts/cover_atlas.json} &
+$786/86$ covers; $1{,}148/102$ selectors; $90/2/10$ taxonomy; typed carrier
+double cosets; unique \rowid{M0030CF} exception\\
+\addlinespace
+\cref{thm:selected-contacts,thm:contact-obstruction} &
+\path{artifacts/contact_obstructions.json} &
+$188/28/84/11$ selected panel; $212/82$ all-cover panel; two edgewise and zero
+global witnesses\\
+\addlinespace
+\cref{thm:tile-congruence,thm:partition-congruence} &
+\path{artifacts/ambient_symmetry_atlas.json} &
+$82/159$, $77/5$ tiles; $86/151$, $65/21$ partitions; $86/69$ full/rotation
+tile transitivity; exact corner-isometry audit\\
+\addlinespace
+\cref{prop:boundary} &
+\path{artifacts/boundary_presentations.json} &
+$1{,}692/70$ atomic and $1{,}506/72$ maximal-reflex profiles; calibration
+$3/6$\\
+\bottomrule
+\end{longtable}
+
+The public aggregate certificate repeats these fields in one stable schema
+and fails if any displayed number, row digest, or referenced artifact drifts.

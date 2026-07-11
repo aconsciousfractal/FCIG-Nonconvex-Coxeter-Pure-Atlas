@@ -1,0 +1,49 @@
+{
+  "schema": "fcig.nonconvex_a3.public.paper_build.v1",
+  "snapshot_date": "2026-07-11",
+  "status": "PASS_FRESH_STAGED_PAPER_BUILD",
+  "pass": true,
+  "jobname": "The_Nonconvex_A3_Coxeter-Chamber_Atlas",
+  "page_count": 27,
+  "pdf_path": "paper/The_Nonconvex_A3_Coxeter-Chamber_Atlas.pdf",
+  "pdf_sha256": "38445A4A680FC9C6413798A11CD78095F6BF4350EBCE19CA005C2EE6DE9C9216",
+  "catalogue_sha256": "BC3988B85C968539F9484B117E53207D09AF601FC450A34AA8E64F27DB6E63D1",
+  "tool_versions": {
+    "pdflatex": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+    "bibtex": "MiKTeX-BibTeX 4.2 (MiKTeX 25.12)"
+  },
+  "commands": [
+    [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=The_Nonconvex_A3_Coxeter-Chamber_Atlas",
+      "main.tex"
+    ],
+    [
+      "bibtex",
+      "The_Nonconvex_A3_Coxeter-Chamber_Atlas"
+    ],
+    [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=The_Nonconvex_A3_Coxeter-Chamber_Atlas",
+      "main.tex"
+    ],
+    [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=The_Nonconvex_A3_Coxeter-Chamber_Atlas",
+      "main.tex"
+    ]
+  ],
+  "quality_checks": {
+    "latex_errors": 0,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "overfull_hboxes": 0
+  },
+  "payload_sha256_without_self_field": "84764A602B1EFF0EF455B12FD631DE3AD9AD535F5FE1848DFF3E5C7D253947A4"
+}

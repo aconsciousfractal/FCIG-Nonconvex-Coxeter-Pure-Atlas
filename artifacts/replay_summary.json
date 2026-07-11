@@ -1,0 +1,823 @@
+{
+  "schema": "fcig.nonconvex_a3.public.replay_summary.v1",
+  "snapshot_date": "2026-07-11",
+  "status": "PASS_PUBLIC_DERIVED_ARTIFACT",
+  "pass": true,
+  "provenance": {
+    "derivation": "aggregate release-candidate summary over every exported exact parent",
+    "parents": {
+      "s4": {
+        "source_id": "s4",
+        "gate": "P18-S4",
+        "schema": "fcig.p18.s4.independent_bounded_census.v1",
+        "status": "PASS_INDEPENDENT_NUMERIC_MASK_SCAN",
+        "pass": true,
+        "source_payload_sha256": "1E48DDE8C826AF542441869456A8BE79105B1B7272B5AB8C8A89218AD300E89E",
+        "source_raw_sha256": "BCF9214D1D2C438AEE85ACE2E37D735340AFC650C681605521A5AD6FDE830AC5"
+      },
+      "s5": {
+        "source_id": "s5",
+        "gate": "P18-S5",
+        "schema": "fcig.p18.s5.canonical_nonconvex_tile_orbit_atlas.v1",
+        "status": "PASS_CANONICAL_82_ROW_NONCONVEX_TILE_ORBIT_ATLAS",
+        "pass": true,
+        "source_payload_sha256": "C555CD07F05B07A800C579C08F9940297815E839D41DC451928A9DDB48035CED",
+        "source_raw_sha256": "B1977797F8E116AECAAD7F9158F5356C37E97AFF76511BF1468E1BA1E5F89B56"
+      },
+      "s6_fingerprint": {
+        "source_id": "s6_fingerprint",
+        "gate": "P18-S6",
+        "schema": "fcig.p18.s6.row_fingerprint_extension.v1",
+        "status": "PASS_82_INTRINSIC_NONMETRIC_ROW_FINGERPRINTS",
+        "pass": true,
+        "source_payload_sha256": "907443E254DE390C41B29FB9F3D2CB73F62F3FEC068D122863E2203128D3E388",
+        "source_raw_sha256": "692FC9091A08421C077F145E75DE3F95E33B1E1EE3D1B5284594CA843D925AE2"
+      },
+      "s6_contact": {
+        "source_id": "s6_contact",
+        "gate": "P18-S6",
+        "schema": "fcig.p18.s6.selected_cover_intersection_extension.v1",
+        "status": "PASS_188_EXACT_SELECTED_COVER_STATIC_INTERSECTIONS",
+        "pass": true,
+        "source_payload_sha256": "78AAC3121A832411B23BBF94FCD66A8E769C716745ACEC7E33A57D961CB217AC",
+        "source_raw_sha256": "423D83D53EC1AB1CB9E6D7E864FA43F56EDF966005A8E940FC541362FC1B1A4F"
+      },
+      "s6_boundary": {
+        "source_id": "s6_boundary",
+        "gate": "P18-S6-BOUNDARY-METRIC",
+        "schema": "fcig.p18.s6.boundary_metric_extension.v1",
+        "status": "PASS_TWO_LANE_EXACT_BOUNDARY_METRIC_EXTENSION",
+        "pass": true,
+        "source_payload_sha256": "0B383A653DD307F99907073BD4CCDF460C377EFEA8B4D36AA89D22DED564B5AC",
+        "source_raw_sha256": "61737EAFBCA7EF9AFD876EAC9FA0D044720A101CC35C7EB43CBE44360E3C1373"
+      },
+      "s7": {
+        "source_id": "s7",
+        "gate": "P18-S7",
+        "schema": "fcig.p18.s7.complete_cover_and_multiplier_structure.v1",
+        "status": "S7_PASS_COMPLETE_COVER_AND_MULTIPLIER_STRUCTURE",
+        "pass": true,
+        "source_payload_sha256": "D64A5FA49ECF100F954629B3EC6048E38CCE52803F92FB3365CCB9734E2F385D",
+        "source_raw_sha256": "2F2BCEBABEDE7D7030EC6480C8B8CE585F68FE83B561113D65B3C89E4EB109BE"
+      },
+      "s8": {
+        "source_id": "s8",
+        "gate": "P18-S8",
+        "schema": "fcig.p18.s8.ambient_congruence_and_transitivity_extension.v1",
+        "status": "S8_PASS_AMBIENT_CONGRUENCE_AND_TRANSITIVITY",
+        "pass": true,
+        "source_payload_sha256": "32CB551261E3159ABE1FE77279728133E1C6138745B52D057A45993115746451",
+        "source_raw_sha256": "ECCEB726B211ECD3E9FD5D9E9D2176E8B94BCCDE0B075F6342FCB01D97C54718"
+      },
+      "o1": {
+        "source_id": "o1",
+        "gate": "P18-S13-O1",
+        "schema": "fcig.p18.s13_o1.global_congruence_gate.v1",
+        "status": "PASS_GLOBAL_CONGRUENCE_EQUALS_LEFT_S4_AND_EXACT_COVER_COMPLETE",
+        "pass": true,
+        "source_payload_sha256": "8DD3A4704CA8967DD108BCD941449916791D1DF455650865AD75FBA9AD168C1F",
+        "source_raw_sha256": "5A9895F6952191B3ED63AEFFEEDAC9A897417F238D8F39F588917CC029EE1401",
+        "producer_script_sha256": "C464E5892812775A325C92861CD88C68AD5C9BA981F259753FEB08BDC0747AC8"
+      }
+    },
+    "parent_count": 8
+  },
+  "scope": "fixed regular tetrahedron subdivided into its 24 closed A3 Coxeter chambers; connected chamber unions only",
+  "counts": {
+    "connected_nonempty_masks": 1210648,
+    "eligible_connected_masks": 67681,
+    "canonical_candidates": 2874,
+    "all_tilers": 97,
+    "convex_tilers": 15,
+    "nonconvex_tilers": 82,
+    "raw_covers": 786,
+    "cover_orbits": 86,
+    "raw_multiplier_sets": 1148,
+    "multiplier_orbits": 102,
+    "ambient_tile_classes": 82,
+    "ambient_partition_classes": 86
+  },
+  "nonconvex_rows_by_k": {
+    "6": 14,
+    "8": 18,
+    "12": 50
+  },
+  "contact_summary": {
+    "selected_cover_count": 82,
+    "selected_cover_pairs": 188,
+    "selected_cover_pairs_by_k": {
+      "12": 50,
+      "6": 84,
+      "8": 54
+    },
+    "pair_dimensions": {
+      "1": 4,
+      "2": 184
+    },
+    "distinct_kappa_profiles": 28,
+    "distinct_s4_relabeling_omega_types": 84,
+    "kappa_profiles_noninjective_for_exact_omega": 11,
+    "selected_cover_edgewise_graph_signature_unique_classes": 80,
+    "selected_cover_edgewise_graph_signature_collision_groups": [
+      [
+        "P18-NC-K06-M00006F",
+        "P18-NC-K06-M000077"
+      ],
+      [
+        "P18-NC-K06-M00114D",
+        "P18-NC-K06-M0011C5"
+      ]
+    ],
+    "colored_incidence_collision_kappa_2_1_2_f_6_9_4_0_dim_2": {
+      "distinct_colored_flag_vectors": 3,
+      "multiplicities": [
+        4,
+        4,
+        18
+      ],
+      "vectors_and_multiplicities": [
+        {
+          "colored_flag_vector": [
+            2,
+            1,
+            2,
+            1,
+            0,
+            2,
+            2,
+            2,
+            1,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "colored_flag_vector": [
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            0
+          ],
+          "multiplicity": 18
+        },
+        {
+          "colored_flag_vector": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            0,
+            1,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    }
+  },
+  "boundary_summary": {
+    "row_count": 82,
+    "left_invariance_cases": 1968,
+    "boundary_triangle_count_total": 1672,
+    "published_atomic_edge_count_total": 1692,
+    "maximal_reflex_edge_count_total": 1506,
+    "exact_class_count": 8,
+    "published_atomic_unique_profiles": 70,
+    "published_atomic_collision_histogram": {
+      "1": 59,
+      "2": 10,
+      "3": 1
+    },
+    "published_atomic_collision_groups": [
+      [
+        "P18-NC-K06-M00006F",
+        "P18-NC-K06-M000077"
+      ],
+      [
+        "P18-NC-K06-M00114D",
+        "P18-NC-K06-M0011C5"
+      ],
+      [
+        "P18-NC-K08-M00215F",
+        "P18-NC-K08-M00249F"
+      ],
+      [
+        "P18-NC-K08-M003157",
+        "P18-NC-K08-M0035C5"
+      ],
+      [
+        "P18-NC-K12-M042BDF",
+        "P18-NC-K12-M06F09F"
+      ],
+      [
+        "P18-NC-K12-M0433DF",
+        "P18-NC-K12-M04F0DF"
+      ],
+      [
+        "P18-NC-K12-M052DFA",
+        "P18-NC-K12-M06D49F",
+        "P18-NC-K12-M07B4BA"
+      ],
+      [
+        "P18-NC-K12-M057DD2",
+        "P18-NC-K12-M068E9F"
+      ],
+      [
+        "P18-NC-K12-M07AA1F",
+        "P18-NC-K12-M07BA17"
+      ],
+      [
+        "P18-NC-K12-M0C5CD7",
+        "P18-NC-K12-M0D2CFA"
+      ],
+      [
+        "P18-NC-K12-M1725F8",
+        "P18-NC-K12-M17A4F8"
+      ]
+    ],
+    "published_atomic_exact_profile_stream_sha256": "6A6E32F2A21B5C456FB4869F487B8E55E64B9FE88DA4E96A12EFDC0DA02B3657",
+    "maximal_reflex_unique_profiles": 72,
+    "maximal_reflex_collision_histogram": {
+      "1": 63,
+      "2": 8,
+      "3": 1
+    },
+    "maximal_reflex_collision_groups": [
+      [
+        "P18-NC-K06-M00006F",
+        "P18-NC-K06-M000077"
+      ],
+      [
+        "P18-NC-K06-M00114D",
+        "P18-NC-K06-M0011C5"
+      ],
+      [
+        "P18-NC-K12-M042BDF",
+        "P18-NC-K12-M06F09F"
+      ],
+      [
+        "P18-NC-K12-M0433DF",
+        "P18-NC-K12-M04F0DF"
+      ],
+      [
+        "P18-NC-K12-M052DFA",
+        "P18-NC-K12-M06D49F",
+        "P18-NC-K12-M07B4BA"
+      ],
+      [
+        "P18-NC-K12-M057DD2",
+        "P18-NC-K12-M068E9F"
+      ],
+      [
+        "P18-NC-K12-M07AA1F",
+        "P18-NC-K12-M07BA17"
+      ],
+      [
+        "P18-NC-K12-M0C5CD7",
+        "P18-NC-K12-M0D2CFA"
+      ],
+      [
+        "P18-NC-K12-M1725F8",
+        "P18-NC-K12-M17A4F8"
+      ]
+    ],
+    "maximal_reflex_exact_profile_stream_sha256": "BF5B5EF991C64D1E2FECB1590F4555A9FA1455F0154361123A24EB0302835C11",
+    "published_atomic_convex_calibration_pass": 15,
+    "maximal_reflex_convex_table_matches": 5,
+    "maximal_reflex_convex_table_matching_types": [
+      "T1",
+      "T2",
+      "T3",
+      "T5",
+      "T11"
+    ],
+    "t16_published_atomic_70": [
+      3,
+      1
+    ],
+    "t16_maximal_reflex_70": [
+      6,
+      1
+    ],
+    "literal_line_only_mixed_class_rows": 71,
+    "line_class_merge_profile_difference_rows": 26,
+    "rejected_line_class_merge_edge_count_total": 1467,
+    "rejected_line_class_merge_unique_profiles": 78
+  },
+  "cover_summary": {
+    "S4_subgroup_inventory_count": 30,
+    "S4_subgroup_type_histogram": {
+      "A4": 1,
+      "C2_double_transposition": 3,
+      "C2_transposition": 6,
+      "C3": 4,
+      "C4": 3,
+      "D8_order8": 3,
+      "S3": 4,
+      "S4": 1,
+      "V4_normal_double_transposition": 1,
+      "V4_split_two_transpositions": 3,
+      "trivial": 1
+    },
+    "nested_row_record_self_hash_verified_count": 82,
+    "nested_cover_orbit_record_self_hash_verified_count": 86,
+    "nested_multiplier_orbit_record_self_hash_verified_count": 102,
+    "row_count": 82,
+    "raw_unordered_exact_cover_count": 786,
+    "global_left_cover_orbit_count": 86,
+    "global_left_cover_space_transitive_row_count": 79,
+    "nontransitive_global_left_cover_space_row_count": 3,
+    "nontransitive_global_left_cover_space_row_ids": [
+      "P18-NC-K06-M00007D",
+      "P18-NC-K06-M00016D",
+      "P18-NC-K06-M001345"
+    ],
+    "raw_multiplier_set_count": 1148,
+    "global_left_multiplier_orbit_count": 102,
+    "cover_orbit_size_histogram": {
+      "3": 4,
+      "6": 23,
+      "8": 18,
+      "12": 41
+    },
+    "cover_stabilizer_size_histogram": {
+      "2": 41,
+      "3": 18,
+      "4": 23,
+      "8": 4
+    },
+    "cover_stabilizer_type_histogram": {
+      "C2_double_transposition": 41,
+      "C3": 18,
+      "C4": 17,
+      "D8_order8": 4,
+      "V4_normal_double_transposition": 6
+    },
+    "global_left_multiplier_orbit_count_per_cover_orbit_histogram": {
+      "1": 78,
+      "2": 3,
+      "3": 2,
+      "4": 3
+    },
+    "cover_orbits_with_multiple_global_left_multiplier_orbits_row_ids": [
+      "P18-NC-K06-M00034D",
+      "P18-NC-K06-M0020BA",
+      "P18-NC-K08-M0030CF",
+      "P18-NC-K12-M000FFF",
+      "P18-NC-K12-M044DDF",
+      "P18-NC-K12-M07B21F",
+      "P18-NC-K12-M1455D7",
+      "P18-NC-K12-M1CD4C7"
+    ],
+    "multiplier_orbit_size_histogram": {
+      "6": 20,
+      "8": 19,
+      "12": 53,
+      "24": 10
+    },
+    "left_multiplier_set_stabilizer_type_histogram": {
+      "C2_double_transposition": 53,
+      "C3": 19,
+      "C4": 15,
+      "V4_normal_double_transposition": 5,
+      "trivial": 10
+    },
+    "left_multiplier_set_stabilizer_normalizer_size_histogram": {
+      "6": 19,
+      "8": 68,
+      "24": 15
+    },
+    "coset_selector_multiplier_orbit_count": 90,
+    "genuine_double_coset_selector_multiplier_orbit_count": 2,
+    "genuine_double_coset_selector_row_ids": [
+      "P18-NC-K06-M00034D",
+      "P18-NC-K06-M0020BA"
+    ],
+    "residual_selector_multiplier_orbit_count": 10,
+    "residual_selector_row_ids": [
+      "P18-NC-K06-M00034D",
+      "P18-NC-K06-M0020BA",
+      "P18-NC-K08-M0030CF",
+      "P18-NC-K12-M000FFF",
+      "P18-NC-K12-M0447F7",
+      "P18-NC-K12-M06F23E",
+      "P18-NC-K12-M0CC3F3",
+      "P18-NC-K12-M1455D7",
+      "P18-NC-K12-M1CD1D3"
+    ],
+    "single_double_coset_L_A_a_R_A_multiplier_orbit_count": 92,
+    "multiplier_orbits_with_subgroup_representative_count": 90,
+    "selector_is_any_subgroup_coset_multiplier_orbit_count": 90,
+    "selector_is_any_subgroup_double_coset_multiplier_orbit_count": 92,
+    "within_cover_piece_transitive_cover_orbit_count": 86,
+    "selector_independent_lift_B_C_subgroup_count": 85,
+    "selector_independent_lift_B_C_genuine_double_coset_non_subgroup_count": 1,
+    "selector_independent_lift_B_C_genuine_double_coset_non_subgroup_row_ids": [
+      "P18-NC-K08-M0030CF"
+    ],
+    "cover_Burnside_cycle_type_fixed_incidence": {
+      "identity": 786,
+      "transposition": 24,
+      "double_transposition": 738,
+      "three_cycle": 288,
+      "four_cycle": 228
+    },
+    "multiplier_Burnside_cycle_type_fixed_incidence": {
+      "identity": 1148,
+      "transposition": 0,
+      "double_transposition": 816,
+      "three_cycle": 304,
+      "four_cycle": 180
+    }
+  },
+  "ambient_summary": {
+    "canonical_tile_row_count": 82,
+    "S3_S5_S7_exact_row_join_count": 82,
+    "rank3_corner_count_histogram": {
+      "5": 2,
+      "6": 3,
+      "7": 9,
+      "8": 9,
+      "9": 16,
+      "10": 7,
+      "11": 14,
+      "12": 10,
+      "13": 7,
+      "14": 5
+    },
+    "rank3_corner_locus_affinely_spanning_row_count": 82,
+    "corner_distance_multiset_signature_class_count": 47,
+    "corner_distance_multiset_collision_class_count": 19,
+    "corner_isometric_cross_row_pair_count": 66,
+    "unordered_cross_row_pair_space_count": 3321,
+    "unordered_row_pair_space_including_diagonal_count": 3403,
+    "signature_screen_rejected_cross_row_pair_count": 3253,
+    "signature_screen_evaluated_cross_row_pair_count": 68,
+    "signature_screen_evaluated_nonisometric_cross_row_pair_count": 2,
+    "corner_isometric_cross_row_map_count": 257,
+    "corner_self_isometry_map_count": 282,
+    "corner_candidate_map_count_total": 539,
+    "corner_self_isometry_group_size_histogram": {
+      "1": 28,
+      "2": 26,
+      "4": 13,
+      "6": 1,
+      "8": 12,
+      "24": 2
+    },
+    "corner_candidate_orientation_preserving_count": 294,
+    "corner_candidate_orientation_reversing_count": 245,
+    "Gram_and_distance_graph_enumerator_disagreement_count": 0,
+    "non_S4_corner_isometry_count": 0,
+    "cross_row_actual_shape_congruence_map_count": 0,
+    "ambient_Euclidean_tile_congruence_class_count": 82,
+    "actual_tile_self_isometry_count_total": 98,
+    "actual_tile_self_orientation_preserving_count_total": 91,
+    "actual_tile_self_orientation_reversing_count_total": 7,
+    "chiral_tile_congruence_class_count": 77,
+    "achiral_tile_congruence_class_count": 5,
+    "oriented_A4_tile_congruence_class_count": 159,
+    "Phi_chamber_action_cases": 576,
+    "Phi_metric_action_cases": 2520,
+    "Phi_corner_locus_covariance_cases": 1968,
+    "ambient_partition_congruence_class_count": 86,
+    "oriented_A4_partition_congruence_class_count": 151,
+    "chiral_partition_congruence_class_count": 65,
+    "achiral_partition_congruence_class_count": 21,
+    "global_left_and_ambient_cover_space_transitive_row_count": 79,
+    "oriented_A4_cover_space_transitive_row_count": 17,
+    "oriented_A4_cover_orbit_count_per_row_histogram": {
+      "1": 17,
+      "2": 62,
+      "3": 2,
+      "4": 1
+    },
+    "ambient_isohedral_partition_count": 86,
+    "rotation_isohedral_partition_count": 69,
+    "orientation_reversing_symmetry_required_isohedral_partition_count": 17,
+    "orientation_reversing_symmetry_required_stabilizer_type_histogram": {
+      "C4": 17
+    },
+    "distinct_cover_representative_S4_collision_count": 0,
+    "cover_stabilizer_type_histogram": {
+      "C2_double_transposition": 41,
+      "C3": 18,
+      "C4": 17,
+      "D8_order8": 4,
+      "V4_normal_double_transposition": 6
+    },
+    "M00007D_full_and_oriented_split": {
+      "full_ambient_partition_congruence_class_count": 2,
+      "oriented_A4_partition_congruence_class_count": 3,
+      "stabilizer_types": [
+        "V4_normal_double_transposition",
+        "C4"
+      ],
+      "oriented_class_contributions": [
+        2,
+        1
+      ],
+      "rotation_isohedral_flags": [
+        true,
+        false
+      ]
+    },
+    "full_tetrahedron_union_cover_count": 86,
+    "reference_tetrahedron_extreme_vertex_count": 4,
+    "reference_tetrahedron_full_isometry_group_order": 24,
+    "negative_control_count": 12,
+    "negative_control_pass_count": 12
+  },
+  "global_gate_summary": {
+    "enumeration": {
+      "connected_nonempty_masks": 1210648,
+      "connected_by_size": {
+        "1": 24,
+        "2": 36,
+        "3": 72,
+        "4": 150,
+        "5": 336,
+        "6": 752,
+        "7": 1632,
+        "8": 3522,
+        "9": 7600,
+        "10": 16008,
+        "11": 32688,
+        "12": 63124,
+        "13": 111480,
+        "14": 174276,
+        "15": 230128,
+        "16": 239127,
+        "17": 182520,
+        "18": 97844,
+        "19": 36936,
+        "20": 10092,
+        "21": 2000,
+        "22": 276,
+        "23": 24,
+        "24": 1
+      },
+      "connected_scs_order_mask_stream_sha256": "41A21AA27BD8D669A4913E368EC659710510D86B40F7B15ED7F064BE82BA91EE",
+      "eligible_connected_masks": 67681,
+      "eligible_by_size": {
+        "1": 24,
+        "2": 36,
+        "3": 72,
+        "4": 150,
+        "6": 752,
+        "8": 3522,
+        "12": 63124,
+        "24": 1
+      },
+      "canonical_left_orbit_candidates": 2874,
+      "canonical_candidates_by_size": {
+        "1": 1,
+        "2": 3,
+        "3": 3,
+        "4": 9,
+        "6": 37,
+        "8": 156,
+        "12": 2664,
+        "24": 1
+      },
+      "canonical_candidate_mask_stream_sha256": "6C13445C1E9126C490DE0857D36B2B8809AB11B1D07ABA6B943CD5656E8C1D4D"
+    },
+    "global_congruence_gate": {
+      "proof_dictionary": [
+        "congruent chamber unions have equal volume, hence equal chamber count k",
+        "a Euclidean shape isometry maps the intrinsic rank-three boundary-plane corner locus isometrically",
+        "face interiors have normal rank one; the exact edge-stratum audit has rank at most two, so every rank-three point is a mesh vertex",
+        "affine-rank three makes a corner-set isometry determine the ambient isometry uniquely",
+        "exact S4 covariance reduces all candidate loci to canonical S4 corner classes without losing any isometry",
+        "exact distance-graph and affine/Gram lanes independently enumerate every corner-set isometry",
+        "every enumerated map is a coordinate permutation Phi_g, so any congruent chamber union is a left translate"
+      ],
+      "candidate_count": 2874,
+      "corner_count_histogram": {
+        "4": 9,
+        "5": 8,
+        "6": 12,
+        "7": 46,
+        "8": 74,
+        "9": 276,
+        "10": 404,
+        "11": 619,
+        "12": 635,
+        "13": 546,
+        "14": 233,
+        "15": 12
+      },
+      "corner_affine_rank_histogram": {
+        "3": 2874
+      },
+      "all_corner_loci_affinely_span_H": true,
+      "invalid_facet_incidence_candidate_count": 0,
+      "invalid_facet_incidence_first_masks_hex": [],
+      "nonmanifold_boundary_candidate_count": 1809,
+      "nonmanifold_boundary_first_masks_hex": [
+        "0001FD",
+        "0001FE",
+        "0010FD",
+        "0010FE",
+        "0020FD",
+        "0020FE",
+        "0030FA",
+        "00518F",
+        "005197",
+        "0051CE",
+        "0051D6",
+        "0061CD",
+        "00634D",
+        "0071CA",
+        "001F7F",
+        "001FBF",
+        "001FFD",
+        "001FFE",
+        "002F7F",
+        "002FBF"
+      ],
+      "rank3_nonvertex_edge_stratum_candidate_count": 0,
+      "rank3_nonvertex_edge_stratum_first_masks_hex": [],
+      "global_C3_covariance_audit": {
+        "pass": true,
+        "errors": [],
+        "left_chamber_bijection_cases": 24,
+        "chamber_tetrahedron_covariance_cases": 576,
+        "barycentric_mesh_vertex_covariance_cases": 360,
+        "chamber_facet_occurrence_covariance_cases": 2304,
+        "facet_occurrence_incidence_equivalence_cases": 109440,
+        "primitive_boundary_plane_normal_line_covariance_cases": 2304,
+        "candidate_C3_covariance_cases_implied": 68976,
+        "deduction": [
+          "Phi_g bijects the 24 chambers and the 96 chamber-facet occurrences.",
+          "Facet-key equality is preserved, hence every selected-mask boundary-facet incidence multiplicity is preserved.",
+          "Every boundary triangle and its primitive normal line transform exactly under Phi_g.",
+          "Coordinate permutation is an invertible orthogonal linear map, so it preserves the rank of every local set of plane-normal lines.",
+          "Therefore boundary extraction, local boundary-plane germs, normal-span rank, and C3 commute with Phi_g for every one of the 2^24 chamber masks."
+        ]
+      },
+      "distance_signature_bucket_count": 258,
+      "largest_distance_signature_bucket": 224,
+      "all_unordered_pairs_including_diagonal": 4131375,
+      "volume_rejected_pairs": 568587,
+      "corner_distance_signature_rejected_pairs_with_equal_volume": 3460040,
+      "original_pairs_surviving_volume_and_distance_invariants": 102748,
+      "pair_accounting_identity_holds": true,
+      "canonical_S4_corner_class_count": 274,
+      "canonical_corner_class_distance_signature_bucket_count": 258,
+      "largest_canonical_corner_class_signature_bucket": 2,
+      "canonical_corner_class_pairs_exhausted_by_both_exact_lanes": 290,
+      "cross_canonical_corner_class_isometric_pairs": 0,
+      "exact_corner_isometry_maps_on_canonical_classes": 617,
+      "derived_cross_candidate_corner_isometric_pairs": 95363,
+      "derived_corner_isometry_maps_on_all_candidate_pairs": 228599,
+      "actual_shape_self_isometry_maps_over_all_candidates": 3030,
+      "orientation_of_exact_class_corner_maps": {
+        "preserving": 380,
+        "reversing": 237
+      },
+      "graph_gram_disagreement_count": 0,
+      "non_S4_corner_isometry_map_count": 0,
+      "non_S4_first_examples": [],
+      "corner_isometry_map_stream_sha256": "8AEF37991867BE5BB13D40D7C0C4787EB676503219A90BFAA8AD480A1FF6DA13",
+      "conclusion_if_pass": "free Euclidean congruence between eligible connected chamber unions equals locked left-S4 orbit equivalence"
+    },
+    "congruent_copy_exact_cover": {
+      "search_semantics": "after the global rigidity gate, the complete set of eligible chamber-union copies congruent to U is exactly {g.U:g in S4}",
+      "canonical_congruence_classes_decided": 2874,
+      "negative_classes": 2777,
+      "positive_classes": 97,
+      "convex_positive_classes": 15,
+      "nonconvex_positive_classes": 82,
+      "positive_by_k": {
+        "1": 1,
+        "2": 3,
+        "3": 2,
+        "4": 2,
+        "6": 17,
+        "8": 20,
+        "12": 51,
+        "24": 1
+      },
+      "positive_mask_stream_sha256": "D6E4CE65173C71CB9D89935F13DAD1B2181C3D4E1DFA3DD836FAF79FC6CF32B2",
+      "positive_set_equals_S4_certified_set": true,
+      "nonconvex_positive_masks_hex": [
+        "00006F",
+        "000077",
+        "00007D",
+        "0000CF",
+        "000157",
+        "00016D",
+        "0001CD",
+        "00034D",
+        "001097",
+        "0010C7",
+        "00114D",
+        "0011C5",
+        "001345",
+        "0020BA",
+        "00017F",
+        "0010EF",
+        "00116F",
+        "0014AF",
+        "001F45",
+        "0020DF",
+        "00215F",
+        "00249F",
+        "0030CF",
+        "00314F",
+        "003157",
+        "0031C7",
+        "00348F",
+        "0034CD",
+        "0035C5",
+        "005157",
+        "005353",
+        "007B28",
+        "000FFF",
+        "0017FF",
+        "001FF7",
+        "002BFF",
+        "002FFB",
+        "0033FF",
+        "0055FF",
+        "007FD3",
+        "012B7F",
+        "012FFA",
+        "0417DF",
+        "042BDF",
+        "042DFB",
+        "0433DF",
+        "0447F7",
+        "044DDF",
+        "0455DF",
+        "045DD7",
+        "0471DF",
+        "047DD3",
+        "048EDF",
+        "04D4DF",
+        "04F0DF",
+        "052B5F",
+        "052DFA",
+        "05335F",
+        "05715F",
+        "057DD2",
+        "068E9F",
+        "06D49F",
+        "06F09F",
+        "06F23E",
+        "07AA1F",
+        "07B21F",
+        "07B4BA",
+        "07BA17",
+        "07BE92",
+        "0C5CD7",
+        "0CC3F3",
+        "0D2CFA",
+        "1455D7",
+        "1471D7",
+        "1475D3",
+        "1525FA",
+        "153357",
+        "1575D2",
+        "1725F8",
+        "17A4F8",
+        "1CD1D3",
+        "1CD4C7"
+      ],
+      "conclusion_if_pass": "exactly 97 connected Coxeter-pure congruence classes tile T: 15 convex and 82 nonconvex"
+    }
+  },
+  "claim_boundary": {
+    "congruence_equals_left_S4_on_full_eligible_carrier": true,
+    "arbitrary_non_Coxeter_tetrahedron_dissections": false,
+    "disconnected_chamber_unions": false,
+    "formal_proof_artifact": false,
+    "external_red_team_complete": false
+  },
+  "payload_sha256_without_self_field": "8A5273EA001BAD8A8769D0739593CBBDEABC6D46E7B3FDF0325B59C32CC119D9"
+}

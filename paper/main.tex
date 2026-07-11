@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Nonconvex A3 Coxeter-Chamber Atlas
+%% Public release-candidate manuscript; publication remains owner-gated.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{amsart}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+\pdftrailerid{}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,enumitem,longtable,graphicx}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\Urlmuskip=0mu plus 2mu\relax
+
+\input{macros}
+
+\hypersetup{
+  pdftitle={The Nonconvex A3 Coxeter-Chamber Atlas},
+  pdfauthor={Oleksiy Babanskyy},
+  pdfsubject={congruence rigidity and finite classification of nonconvex Coxeter-pure tetrahedral tilings},
+  pdfkeywords={Coxeter complex, regular tetrahedron, exact cover, symmetric group, Patterson function, homometry, congruent dissection}
+}
+
+\title[The nonconvex $A_3$ chamber atlas]
+{The Nonconvex $A_3$ Coxeter-Chamber Atlas:\\
+Congruence Rigidity, Exact Covers, and Patterson Separation}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+\maketitle
+
+\noindent\textbf{Keywords.}
+Coxeter complex; regular tetrahedron; congruent dissection; exact cover;
+symmetric group; Patterson function; homometry; coloured flag complex.
+
+\smallskip
+\noindent\textbf{MSC 2020.}
+Primary: 52C20, 05B45. Secondary: 20B30, 05E18, 52B15.
+
+\tableofcontents
+
+\input{sections/01_introduction}
+\input{sections/02_model_and_equivalences}
+\input{sections/03_finite_reduction_and_atlas}
+\input{sections/04_patterson_separation}
+\input{sections/05_covers_and_selectors}
+\input{sections/06_contact_atlas}
+\input{sections/07_ambient_symmetry}
+\input{sections/08_boundary_presentations}
+\input{sections/09_prior_art_and_scope}
+\input{sections/10_reproducibility}
+
+\appendix
+\input{appendices/A_search_completeness}
+\input{appendices/B_atlas_catalogue}
+\input{appendices/C_certificate_crosswalk}
+
+\section*{Data and code availability}
+The release-candidate companion package contains the complete machine-readable
+atlas, exact standard-library replay code, generated tables, pinned JSON
+certificates, and a SHA-256 manifest.  The package is designed to run without
+network access or a neighbouring checkout.  The public repository URL and
+archival identifier will be inserted only after the final external red team
+and owner release gate.
+
+\bibliographystyle{alpha}
+\bibliography{refs}
+\end{document}

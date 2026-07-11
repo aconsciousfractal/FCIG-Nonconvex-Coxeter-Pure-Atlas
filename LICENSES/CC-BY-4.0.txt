@@ -1,0 +1,12 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+SPDX identifier: CC-BY-4.0
+Canonical legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Plain-text legal code: https://creativecommons.org/licenses/by/4.0/legalcode.txt
+Human-readable deed: https://creativecommons.org/licenses/by/4.0/
+
+The unmodified canonical legal code at the URL above controls.  This pointer
+file is intentionally not an abbreviated or modified substitute for that
+legal code.
+
+Copyright (c) 2026 Oleksiy Babanskyy.

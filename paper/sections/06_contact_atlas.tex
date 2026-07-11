@@ -1,0 +1,102 @@
+\section{Rank-coloured contact complexes}\label{sec:contacts}
+
+\subsection{Exact intersection data}
+
+Every barycentric vertex $b_I$ has rank $|I|\in\{1,2,3,4\}$.  A chamber is
+the simplex on one maximal flag of nonempty subsets of $\{0,1,2,3\}$.  For a
+piece $U$, let $\mathcal B(U)$ be the closed rank-coloured simplicial
+subcomplex formed by all faces of its chambers.  If $X,Y$ are two pieces in
+one exact cover, define their contact complex by
+\[
+ \Om(X,Y)=\mathcal B(X)\cap\mathcal B(Y).
+\]
+Because chamber interiors are disjoint, this lies in the boundary shadow.
+The coned complex retains the universal rank-$4$ barycentre when present.
+
+For $S\subseteq\{1,2,3,4\}$, let $f_S(\Om)$ count faces whose vertex-rank set
+is exactly $S$.  The full coloured flag vector has $15$ coordinates.  We use
+the smaller proper-rank marginal
+\[
+ \kk(\Om)=\bigl(f_{\{1\}}(\Om),f_{\{2\}}(\Om),f_{\{3\}}(\Om)\bigr).
+\]
+It is important that $\kk$ is neither the ordinary $f$-vector nor the full
+coloured flag vector.  Balanced complexes and flag enumeration provide the
+classical background \cite{Stanley1979,Frohmader2012,White2022}.
+
+Two exact contact complexes have the same \emph{$S_4$ type} when one
+simultaneous rank-preserving relabelling of the four tetrahedral vertices
+maps one labelled complex onto the other.  This is a geometric orbit notion,
+not unrestricted abstract simplicial isomorphism.
+
+\subsection{Selected-cover panel}
+
+\begin{theorem}[Selected contact atlas]\label{thm:selected-contacts}
+Choose the certified canonical cover for each of the $82$ tile rows.  The
+resulting covers contain $188$ unordered within-cover piece pairs:
+\[
+84\text{ for }|U|=6,\qquad54\text{ for }|U|=8,\qquad
+50\text{ for }|U|=12.
+\]
+Their contact complexes have $28$ distinct $\kk$ profiles and $84$ exact
+simultaneous-$S_4$ types.  Exactly $11$ $\kk$ profiles contain more than one
+exact type.
+\end{theorem}
+\begin{proof}
+The barycentric faces are represented by exact ranked subset flags.  For each
+pair, intersection is performed before any marginal is taken.  Acting by all
+$24$ simultaneous label permutations and selecting the least encoded complex
+gives the exact type.  Equality grouping of the $188$ records produces the
+stated counts.  Recomputing $\kk$ from each full flag vector verifies the
+proper-rank convention on every record.
+\end{proof}
+
+One collision illustrates the information loss.  For a particular
+$\kk=(2,1,2)$ profile with ordinary face data $(6,9,4,0)$, the records split
+into three different $15$-coordinate coloured flag vectors, with
+multiplicities $4,18,4$.  The marginal sees identical numbers of vertices of
+each proper rank but forgets how those ranks are incident.
+
+\subsection{All covers and a local-to-global obstruction}
+
+Now choose one canonical representative of each of the $86$ global-left
+cover orbits.  Its complete graph on pieces has one edge per unordered piece
+pair, labelled by the exact contact type.  The $86$ panels contain $212$
+edges and have $82$ edgewise signature classes.
+
+Let $E(\C)$ denote the unordered piece pairs of a cover.  For two covers of
+the same tile size, \emph{edgewise equivalence} means
+\[
+ \exists\pi\ \forall e\in E(\C)\ \exists g_e\in S_4:
+ \Om'_{\pi(e)}=g_e\Om_e,
+ \tag{E}
+\]
+where $\pi$ is induced by one global permutation of the pieces.  A
+\emph{global alignment} requires
+\[
+ \exists\pi\ \exists g\in S_4\ \forall e\in E(\C):
+ \Om'_{\pi(e)}=g\Om_e.
+ \tag{G}
+\]
+The same piece permutation occurs in both definitions.  Only the order of
+the geometric quantifiers changes.
+
+\begin{theorem}[Contact local-to-global obstruction]
+\label{thm:contact-obstruction}
+There are five unordered pairs of distinct cover-orbit representatives that
+belong to the same tile row.  Exactly two of these pairs satisfy \textup{(E)}:
+the pairs over \rowid{M00007D} and \rowid{M001345}.  None of the five
+satisfies \textup{(G)}.  Consequently edgewise contact equivalence does not
+imply one global tetrahedral alignment on the certified carrier.
+\end{theorem}
+\begin{proof}
+The three multi-cover rows have respectively $2,3,2$ cover orbits, hence
+$\binom22+\binom32+\binom22=5$ pairs.  For each pair, the replay enumerates
+all piece permutations.  For \textup{(E)} it then tests membership in the
+simultaneous-$S_4$ orbit edge by edge.  For \textup{(G)} it tests each of the
+$24$ common group elements against every edge.  Two pairs pass the first
+test and all five fail the second.  The global test examines $576$ cases per
+pair and $2{,}880$ cases in total.
+\end{proof}
+
+The theorem is static.  It asserts no hinge motion, collision-free path,
+continuous deformation, or mechanical realisability.

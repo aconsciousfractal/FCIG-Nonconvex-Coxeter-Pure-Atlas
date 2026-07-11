@@ -1,0 +1,10 @@
+# Mixed-license repository
+
+This repository is not covered by a single package-wide license.  The
+controlling path-to-license map is `LICENSE_SCOPE.md`.
+
+- Code and code-oriented configuration: MIT; see `LICENSES/MIT.txt`.
+- Paper, documentation, data, tables, and replay artifacts: CC BY 4.0; see
+  `LICENSES/CC-BY-4.0.txt`.
+
+Copyright (c) 2026 Oleksiy Babanskyy.

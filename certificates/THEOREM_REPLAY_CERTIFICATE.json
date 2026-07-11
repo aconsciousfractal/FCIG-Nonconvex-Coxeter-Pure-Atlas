@@ -1,0 +1,29 @@
+{
+  "schema": "fcig.nonconvex_a3.public.theorem_replay_certificate.v1",
+  "snapshot_date": "2026-07-11",
+  "status": "PASS_EXACT_FINITE_EVIDENCE_EXTERNAL_RED_TEAM_PENDING",
+  "checks": {
+    "global_congruence_gate_pass": true,
+    "eligible_candidates": 2874,
+    "congruence_equals_left_S4": true,
+    "tiler_classes": 97,
+    "convex_tiler_classes": 15,
+    "nonconvex_tiler_classes": 82,
+    "atlas_rows": 82,
+    "cover_orbits": 86,
+    "ambient_partition_classes": 86
+  },
+  "artifact_payload_sha256": {
+    "ambient_symmetry_atlas.json": "7E36D1B77A0463EF841EEDC50CE55DCCEF201659BCFFC2ACCBEEB22CC6CDCF5D",
+    "boundary_presentations.json": "4DE1BE63EC5305D8EA20112B5446C2B53091EB94355BE0E6508BC59ECE892F1D",
+    "bounded_census.json": "B6478FC32D835DD617B7F79E3A8B19924055D9545EEF03DC42A60B7A27ADCBAA",
+    "contact_obstructions.json": "553B52CAA09D143F0872B3AD0EB350EA45E080C6889B03A2593C34004B86CE98",
+    "cover_atlas.json": "48DEB0A50706312BBFABCF1BBEE9446F5FE186BA01DF850C083D76861F81BA97",
+    "global_congruence_gate.json": "0BA90A983BB6FFA8F8996E8DE6E04B05401FBCD10B332A0AF8F230C65A105D78",
+    "nonconvex_tile_atlas.json": "E7A720DC6F57C5B6B94BBAB2D44BB47FDF732AA9260C9B00DA45BF4D0C8551CE",
+    "replay_summary.json": "8A5273EA001BAD8A8769D0739593CBBDEABC6D46E7B3FDF0325B59C32CC119D9"
+  },
+  "publication_authorized": false,
+  "remaining_gate": "independent external mathematical red team and owner release decision",
+  "payload_sha256_without_self_field": "C1DD26A37F49BF84B8D3ABF86B7C80D396A6D618A792B48B5BDD3F62854F61C2"
+}
